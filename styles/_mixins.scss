@@ -1,0 +1,28 @@
+/*------------------------------------- Mixins -------------------------------------*/
+
+// Media queries
+@mixin screen($size, $minmax: max, $breakpoint: $breakpoint-large) {
+
+  @if $size=='medium' {
+    @media only screen and (min-width: $breakpoint-medium) {
+      @content;
+    }
+  }
+
+  @else if $size=='large' {
+    @media only screen and (min-width: $breakpoint-large) {
+      @content;
+    }
+  }
+
+  @else if $size=='custom' {
+    @media only screen and (#{$minmax}-width: #{$breakpoint}) {
+      @content;
+    }
+  }
+
+  /* if the screen variable $size does not match up */
+  @else {
+    @content;
+  }
+}
