@@ -1,6 +1,7 @@
 ############################# Local gitignore
 _documents
-src/styles/typography-tester.html
+_temp
+src/styles/typography-overview.html
 
 ############################# Create-React-App gitignore
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.

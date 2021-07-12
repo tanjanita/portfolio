@@ -1,62 +1,3 @@
-/****** Elad Shechter's RESET *******/
-/*** box sizing border-box for all elements ***/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-
-button {
-  background-color: transparent;
-  color: inherit;
-  border-width: 0;
-  padding: 0;
-  cursor: pointer;
-}
-
-figure {
-  margin: 0;
-}
-
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-  margin: 0;
-}
-
-ul, ol, dd {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-p {
-  margin: 0;
-}
-
-cite {
-  font-style: normal;
-}
-
-fieldset {
-  border-width: 0;
-  padding: 0;
-  margin: 0;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -400,16 +341,73 @@ template {
   display: none;
 }
 
+/****** Elad Shechter's RESET *******/
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
 /*------------------ Variables ------------------*/
 /*------------------ Typography ------------------*/
-/* Basic text size */
 html {
-  background: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #ffffff;
+  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
-  line-height: 1.6;
   font-weight: 400;
-  color: #000000;
+  color: #354648;
 }
 
 h1,
@@ -418,55 +416,211 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1em 0 .4em;
-  font-weight: 400;
-  line-height: 1.3;
+  margin: 0 0 .2em;
+  font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #EE766C;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 2.488rem;
+  font-size: 2.5rem;
+  margin-top: 40px;
 }
 
 h2 {
-  font-size: 2.074rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.728rem;
+  font-size: 1.75rem;
 }
 
-h4 {
-  font-size: 1.44rem;
-}
-
-h5 {
-  font-size: 1.2rem;
-}
-
+h4,
+h5,
 h6 {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 p {
   font-size: 1rem;
-  margin-bottom: 1em;
+  line-height: 1.3em;
+  margin-bottom: .8em;
 }
 
-small,
-.text_small {
-  font-size: 0.833rem;
+.huge {
+  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3rem;
+  margin: .8em 0 .5em;
 }
 
-.text-tiny {
-  font-size: 0.694rem;
+.subheading1,
+.subheading2,
+.subheading3 {
+  font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+.subheading1 {
+  font-size: 2rem;
+}
+
+.subheading3 {
+  font-size: 1.25rem;
+}
+
+.text-small {
+  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.875rem;
+}
+
+.text-micro {
+  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.75rem;
 }
 
 /*------------------ Extensions ------------------*/
 /*------------------ Mixins ------------------*/
 /*------------------ Basic/global items ------------------*/
-p {
-  color: #e75940;
-  background-color: #252c30;
+.center-flex-both {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*------------------ Header ------------------*/
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 34px 16px;
+  background-color: #ffffff;
+}
+
+.header-logo {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 82px;
+  height: 81px;
+}
+
+.header-gradient {
+  height: 40px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 81px;
+}
+
+.navigation-button {
+  display: block;
+  padding: 15px 28px 12px;
+  border-radius: 6px;
+  background-color: #EE766C;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.navigation-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+/*------------------ Main ------------------*/
+.main {
+  padding-top: 177px;
+}
+
+.scroll-teaser {
+  position: fixed;
+  bottom: 30px;
+  left: calc(50% - 1em);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.home {
+  background-image: url("./../portfolio-bgr.gif");
+  background-repeat: no-repeat;
+  background-position: 40px 10px;
+  background-size: cover;
+}
+
+.hero {
+  padding: 0 60px;
+  border-top: solid 1px #ffffff;
+  height: calc(100vh - 177px);
+}
+
+.hero-paragraph {
+  margin: 40px 0 30px;
+}
+
+#home::before,
+#projects::before,
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: -177px;
+  height: 177px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#home::before {
+  margin-top: -257px;
+  height: 257px;
+}
+
+.x {
+  color: #95adaf;
 }
 /*# sourceMappingURL=styles.css.map */

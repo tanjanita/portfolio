@@ -1,0 +1,51 @@
+/*------------------ Main ------------------*/
+.main {
+  padding-top: $header-height-with-gradient;
+}
+
+.scroll-teaser {
+  position: fixed;
+  bottom: 30px;
+  left: calc(50% - 1em);
+  transform: rotate(-90deg);
+}
+
+.home {
+  background-image: url("./../portfolio-bgr.gif");
+  background-repeat: no-repeat;
+  background-position: 40px 10px;
+  background-size: cover;
+}
+
+.hero {
+  padding: 0 60px;
+  border-top: solid 1px $colour-base-light;
+  height: calc(100vh - #{$header-height-with-gradient});
+
+  &-paragraph {
+    margin: 40px 0 30px;
+  }
+}
+
+// Add "buffer" element so link anchors don't get hidden behind the fixed header
+// Maximum support solution, whithout having to introduce empty spans
+#home::before,
+#projects::before,
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: -$header-height-with-gradient;
+  height: $header-height-with-gradient;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#home::before {
+  margin-top: -($header-height-with-gradient+80px);
+  height: ($header-height-with-gradient+80px);
+}
+
+//  temporary classes
+.x {
+  color: $colour-base-medium;
+}

@@ -1,0 +1,52 @@
+/*------------------ Header ------------------*/
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  // z-index: 100;
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: $header-padding-top $padding-sides $header-padding-bottom;
+    background-color: $colour-base-light;
+  }
+
+  &-logo {
+    filter: grayscale(100%);
+    width: $header-logo-width;
+    height: $header-logo-height;
+  }
+
+  &-gradient {
+    height: $header-gradient-height;
+    background-image: linear-gradient($colour-base-light, rgba(255, 255, 255, 0));
+  }
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 81px;
+
+  &-button {
+    display: block;
+    padding: 15px 28px 12px;
+    border-radius: $border-radius;
+    background-color: $colour-highlight-1;
+    color: $colour-base-light;
+    font-weight: bold;
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+}

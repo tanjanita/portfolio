@@ -1,5 +1,23 @@
 /*------------------ Variables ------------------*/
 
-$colour-base-dark: #252c30;
-$colour-base-light: #d7d8db;
-$colour-highlight: #e75940;
+$colour-base-dark: #354648;
+$colour-base-medium: #95adaf;
+$colour-base-medium-light: #D7E6E8;
+$colour-base-light: #ffffff;
+$colour-highlight-1: #EE766C;
+// $colour-highlight-1: #ec542e;
+$colour-highlight-2: #EFD43C;
+
+$padding-sides: 34px;
+
+$header-padding-top: 40px;
+$header-padding-bottom: 16px;
+$header-gradient-height: 40px;
+
+$header-logo-width: 82px;
+$header-logo-height: 81px;
+
+$header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height;
+$header-height-with-gradient: $header-height-without-gradient+$header-gradient-height;
+
+$border-radius: 6px;

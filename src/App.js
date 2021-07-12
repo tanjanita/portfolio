@@ -1,11 +1,13 @@
+import Header from './Header';
+import Main from './Main.js';
+import Footer from './Footer';
+
 function App() {
   return (
     <div>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
+      <Header />
+      <Main />
+      <Footer />
     </div>
   );
 }
