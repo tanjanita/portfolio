@@ -1,6 +1,8 @@
 /*------------------ Mixins ------------------*/
+$breakpoint-medium: 425px;
+$breakpoint-large: 768px;
 
-// Media queries
+// Media queries, mobile-first design
 @mixin screen($size, $minmax: max, $breakpoint: $breakpoint-large) {
 
   @if $size=='medium' {

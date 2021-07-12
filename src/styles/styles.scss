@@ -1,8 +1,8 @@
 //------------------ Importing all SCSS files
 // Third party standardisation collections
 // In order to add further standardisation files, they must also be removed from gitignore
-@import 'standardisation/ESreset';
 @import 'standardisation/normalize';
+@import 'standardisation/ESreset';
 
 // Project-specific styles
 @import 'variables';
@@ -10,3 +10,5 @@
 @import 'extend';
 @import 'mixins';
 @import 'basics';
+@import 'header';
+@import 'main';

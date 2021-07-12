@@ -1,6 +1,6 @@
 /*------------------ Basic/global items ------------------*/
-
-p {
-  color: $colour-highlight;
-  background-color: $colour-base-dark;
+.center-flex-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,50 +1,42 @@
 /*------------------ Typography ------------------*/
-
-$font-family-primary: Verdana,
+$font-sans-serif: Hind,
+Verdana,
 Geneva,
 Tahoma,
 sans-serif;
 
-$font-family-secondary: Georgia,
+$font-serif: "Source Serif Pro",
+Georgia,
 'Times New Roman',
 Times,
 serif;
 
-$font-family-monospace: 'Courier New',
-'Lucida Console',
-'Monaco';
 
-/* Basic text size */
-$text-base-size: 1rem;
+// Use online calculators such as https://www.modularscale.com/ or https://type-scale.com/
+$text-body: 1rem;
+$text-huge: 3rem;
 
-// /* Scaling up the text sizes */
-// $text-scale-ratio: 1.2; // !!! cannot be used with scss as following calculations using variables are not processed !!!
-// $text-xs: calc($text-base-size / (var($text-scale-ratio) * var($text-scale-ratio))); // two smaller
-// $text-sm: calc($text-base-size / var($text-scale-ratio)); // one smaller
-// $text-md: calc($text-base-size * var($text-scale-ratio)); // one bigger
-// $text-lg: calc($text-base-size * var($text-scale-ratio) * var($text-scale-ratio)); // two bigger
-// $text-xl: calc($text-base-size * var($text-scale-ratio) * var($text-scale-ratio) * var($text-scale-ratio)); // three bigger
-// $text-xxl: calc($text-base-size * var($text-scale-ratio) * var($text-scale-ratio) * var($text-scale-ratio) * var($text-scale-ratio)); // four bigger
-// $text-huge: calc($text-base-size * var($text-scale-ratio) * var($text-scale-ratio) * var($text-scale-ratio) * var($text-scale-ratio) * var($text-scale-ratio)); // five bigger
+$text-h1: 2.5rem;
+$text-h2: 2rem;
+$text-h3: 1.75rem;
+$text-h4: 1.25rem;
+$text-sm: 0.875rem;
+$text-xs: 0.75rem;
 
-// Instead of the above scaling value and calculations, 
-// use online calculators such as https://www.modularscale.com/ or https://type-scale.com/
-$text-xs: 0.694rem; // two smaller
-$text-sm: 0.833rem; // one smaller
-$text-md: 1.2rem; // one bigger // this reflects the scale used
-$text-lg: 1.44rem; // two bigger
-$text-xl: 1.728rem; // three bigger
-$text-xxl: 2.074rem; // four bigger
-$text-xxxl: 2.488rem; // five bigger
-
+// $text-huge: 4.3125rem; // 16 > 69px
+// $text-h1: 3.3125rem; // 16 > 53px
+// $text-h2: 2.4375rem; // 16 > 39px
+// $text-h3: 1.9375rem; // 16 > 31px
+// $text-h4: 1.5625rem; // 16 > 25px
+// $text-sm: 0.875rem; // 16 > 14px
+// $text-xs: 0.75rem; // 16 > 12px
 
 html {
-  background: white;
-  font-family: $font-family-primary;
+  background: $colour-base-light;
+  font-family: $font-sans-serif;
   font-size: 100%; // 100% equals 1rem, browser standard is usually 16px. Using 100% avoids a sizing problem in older IE browsers.
-  line-height: 1.6;
   font-weight: 400;
-  color: #000000;
+  color: $colour-base-dark;
 }
 
 h1,
@@ -53,51 +45,66 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 1em 0 .4em;
-  font-weight: 400;
-  line-height: 1.3;
+  margin: 0 0 .2em;
+  font-family: $font-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: $colour-highlight-1;
 }
 
 h1 {
-  margin-top: 0;
-  font-size: $text-xxxl;
+  font-size: $text-h1;
+  margin-top: $header-gradient-height;
 }
 
 h2 {
-  font-size: $text-xxl;
+  font-size: $text-h2;
 }
 
 h3 {
-  font-size: $text-xl;
+  font-size: $text-h3;
 }
 
-h4 {
-  font-size: $text-lg;
-}
-
-h5 {
-  font-size: $text-md;
-}
-
+h4,
+h5,
 h6 {
-  font-size: $text-base-size;
+  font-size: $text-h4;
+  font-weight: 400;
 }
 
 p {
-  font-size: $text-base-size;
-  margin-bottom: 1em;
+  font-size: $text-body;
+  line-height: 1.3em;
+  margin-bottom: .8em;
 }
 
-small,
-.text_small {
+.huge {
+  font-family: $font-sans-serif;
+  font-size: $text-huge;
+  margin: .8em 0 .5em;
+}
+
+.subheading1,
+.subheading2,
+.subheading3 {
+  font-family: $font-serif;
+  font-style: italic;
+}
+
+.subheading1 {
+  font-size: $text-h2;
+}
+
+.subheading3 {
+  font-size: $text-h4;
+}
+
+.text-small {
+  font-family: $font-sans-serif;
   font-size: $text-sm;
 }
 
-.text-tiny {
+.text-micro {
+  font-family: $font-sans-serif;
   font-size: $text-xs;
 }
-
-// only for testing em effects:
-// span {
-//   font-size: 1.5em;
-// }
