@@ -1,0 +1,21 @@
+/*------------------ Hero ------------------*/
+.home {
+  background-image: url("./../Tanja-R-Portfolio-Watermark.svg");
+  background-color: $colour-base-light;
+  background-repeat: no-repeat;
+  background-position: 42px -20px;
+  background-size: auto calc(110vh - #{$header-height-with-gradient});
+}
+
+.hero {
+  padding: 0 calc(#{$padding-sides} + 8px);
+  border-top: solid 1px $colour-base-light;
+  height: calc(104vh - #{$header-height-with-gradient});
+
+  &-paragraph {
+    margin: 40px 10px 30px 0;
+    font-size: $text-h5;
+    line-height: 1.5em;
+    width: 19rem;
+  }
+}

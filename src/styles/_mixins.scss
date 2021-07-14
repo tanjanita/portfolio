@@ -1,11 +1,31 @@
 /*------------------ Mixins ------------------*/
-$breakpoint-medium: 425px;
-$breakpoint-large: 768px;
 
-// Media queries, mobile-first design
-@mixin screen($size, $minmax: max, $breakpoint: $breakpoint-large) {
+// BREAKPOINTS - with viewport widths adopted from bootstrap
 
-  @if $size=='medium' {
+// Extra small devices (portrait phones, less than 576px)
+// (No media query since this is the default in mobile-first design)
+
+// Small devices (landscape phones, 576px and up)
+$breakpoint-small: 576px;
+
+// Medium devices (tablets, 768px and up)
+$breakpoint-medium: 768px;
+
+// Large devices (desktops, 992px and up)
+$breakpoint-large: 992px;
+
+// Extra large devices (large desktops, 1200px and up)
+$breakpoint-xlarge: 1200px;
+
+@mixin screen($size, $minmax: min, $breakpoint: $breakpoint-small) {
+
+  @if $size=='small' {
+    @media only screen and (min-width: $breakpoint-small) {
+      @content;
+    }
+  }
+
+  @else if $size=='medium' {
     @media only screen and (min-width: $breakpoint-medium) {
       @content;
     }
@@ -13,6 +33,12 @@ $breakpoint-large: 768px;
 
   @else if $size=='large' {
     @media only screen and (min-width: $breakpoint-large) {
+      @content;
+    }
+  }
+
+  @else if $size=='xlarge' {
+    @media only screen and (min-width: $breakpoint-xlarge) {
       @content;
     }
   }
@@ -28,3 +54,8 @@ $breakpoint-large: 768px;
     @content;
   }
 }
+
+// Usage example:
+// @include screen(small) {
+//   ... specify css, e.g. color: red;
+// }
