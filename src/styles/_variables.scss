@@ -4,9 +4,15 @@ $colour-base-dark: #354648;
 $colour-base-medium: #95adaf;
 $colour-base-medium-light: #D7E6E8;
 $colour-base-light: #ffffff;
-$colour-highlight-1: #EE766C;
+// $colour-highlight-1: #EE766C;
+$colour-highlight-1: #f3766f;
 // $colour-highlight-1: #ec542e;
 $colour-highlight-2: #EFD43C;
+
+// background logo watermark #e7ecf6
+// salmon colour #f3766f
+// charcoal logo #262626
+// charcoal writing #344648
 
 $padding-sides: 34px;
 
@@ -14,10 +20,13 @@ $header-padding-top: 40px;
 $header-padding-bottom: 16px;
 $header-gradient-height: 40px;
 
-$header-logo-width: 82px;
-$header-logo-height: 81px;
+$header-logo-width: 81px;
+$header-logo-height: 80px;
+
+$watermark-logo-widht: 490px;
+$watermark-logo-height: 480px;
 
 $header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height;
 $header-height-with-gradient: $header-height-without-gradient+$header-gradient-height;
 
-$border-radius: 6px;
+$border-radius: 5px;

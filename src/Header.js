@@ -1,18 +1,22 @@
+import React from "react";
+
 function Header() {
   return (
     <header className="header">
 
       <div className="header-container">
 
-        <a href="#home"><img className="header-logo" src="./images/portfolio-logo.gif" alt="Tanja R. Front End Web Developer Logo" /></a>
+        <a href="#home" title="Tanja R. Front End Web Developer Logo">
+        <img className="header-logo" src="./images/Tanja-R-Portfolio-Logo.svg" alt="Tanja R. Front End Web Developer Logo" />
+        </a>
 
         <nav className="navigation">
 
           <a className="navigation-button" href="mailto:riethmueller@mail.com">Contact me</a>
 
           <div className="navigation-links">
-            <a className="navigation-links-item" href="#projects">Projects</a>
-            <a className="navigation-links-item" href="#about">About</a>
+            <a className="navigation-links-item" href="#portfolio">Portfolio</a>
+            <a className="navigation-links-item" href="#skillset">Skillset</a>
           </div>
 
         </nav> 

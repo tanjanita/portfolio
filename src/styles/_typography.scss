@@ -11,30 +11,21 @@ Georgia,
 Times,
 serif;
 
-
 // Use online calculators such as https://www.modularscale.com/ or https://type-scale.com/
 $text-body: 1rem;
-$text-huge: 3rem;
-
-$text-h1: 2.5rem;
-$text-h2: 2rem;
-$text-h3: 1.75rem;
-$text-h4: 1.25rem;
-$text-sm: 0.875rem;
-$text-xs: 0.75rem;
-
-// $text-huge: 4.3125rem; // 16 > 69px
-// $text-h1: 3.3125rem; // 16 > 53px
-// $text-h2: 2.4375rem; // 16 > 39px
-// $text-h3: 1.9375rem; // 16 > 31px
-// $text-h4: 1.5625rem; // 16 > 25px
-// $text-sm: 0.875rem; // 16 > 14px
-// $text-xs: 0.75rem; // 16 > 12px
+$text-huge: $text-body * 3.1;
+$text-h1: $text-body * 2.5;
+$text-h2: $text-body * 2;
+$text-h3: $text-body * 1.75;
+$text-h4: $text-body * 1.25;
+$text-h5: $text-body * 1.12;
+$text-sm: $text-body * 0.875;
+$text-xs: $text-body * 0.75;
 
 html {
   background: $colour-base-light;
   font-family: $font-sans-serif;
-  font-size: 100%; // 100% equals 1rem, browser standard is usually 16px. Using 100% avoids a sizing problem in older IE browsers.
+  font-size: 100%; // 100% equals 1rem, browser standard is usually 16px. Using 100% avoids a sizing problefont-size: 100%;m in older IE browsers.
   font-weight: 400;
   color: $colour-base-dark;
 }
@@ -54,7 +45,7 @@ h6 {
 
 h1 {
   font-size: $text-h1;
-  margin-top: $header-gradient-height;
+  margin-top: 36px;
 }
 
 h2 {
@@ -65,11 +56,13 @@ h3 {
   font-size: $text-h3;
 }
 
-h4,
+h4 {
+  font-size: $text-h4;
+}
+
 h5,
 h6 {
-  font-size: $text-h4;
-  font-weight: 400;
+  font-size: $text-h5;
 }
 
 p {
@@ -81,12 +74,13 @@ p {
 .huge {
   font-family: $font-sans-serif;
   font-size: $text-huge;
-  margin: .8em 0 .5em;
+  margin: 1em 0 .3em;
 }
 
 .subheading1,
 .subheading2,
-.subheading3 {
+.subheading3,
+.subheading4 {
   font-family: $font-serif;
   font-style: italic;
 }
@@ -95,8 +89,16 @@ p {
   font-size: $text-h2;
 }
 
+.subheading2 {
+  font-size: $text-h3;
+}
+
 .subheading3 {
   font-size: $text-h4;
+}
+
+.subheading4 {
+  font-size: $text-h5;
 }
 
 .text-small {

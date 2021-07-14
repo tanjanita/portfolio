@@ -1,3 +1,4 @@
+/*------------------ Third-party standardisation ------------------*/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -400,7 +401,23 @@ fieldset {
   margin: 0;
 }
 
+/*------------------ Project-specific styles ------------------*/
+/*------------------ Mixins ------------------*/
 /*------------------ Variables ------------------*/
+/*------------------ Extensions ------------------*/
+/*------------------ Basic/global items ------------------*/
+.center-flex-both {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /*------------------ Typography ------------------*/
 html {
   background: #ffffff;
@@ -420,12 +437,12 @@ h6 {
   font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: italic;
-  color: #EE766C;
+  color: #f3766f;
 }
 
 h1 {
   font-size: 2.5rem;
-  margin-top: 40px;
+  margin-top: 36px;
 }
 
 h2 {
@@ -436,11 +453,13 @@ h3 {
   font-size: 1.75rem;
 }
 
-h4,
+h4 {
+  font-size: 1.25rem;
+}
+
 h5,
 h6 {
-  font-size: 1.25rem;
-  font-weight: 400;
+  font-size: 1.12rem;
 }
 
 p {
@@ -451,13 +470,14 @@ p {
 
 .huge {
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 3rem;
-  margin: .8em 0 .5em;
+  font-size: 3.1rem;
+  margin: 1em 0 .3em;
 }
 
 .subheading1,
 .subheading2,
-.subheading3 {
+.subheading3,
+.subheading4 {
   font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
   font-style: italic;
 }
@@ -466,8 +486,16 @@ p {
   font-size: 2rem;
 }
 
+.subheading2 {
+  font-size: 1.75rem;
+}
+
 .subheading3 {
   font-size: 1.25rem;
+}
+
+.subheading4 {
+  font-size: 1.12rem;
 }
 
 .text-small {
@@ -478,21 +506,6 @@ p {
 .text-micro {
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 0.75rem;
-}
-
-/*------------------ Extensions ------------------*/
-/*------------------ Mixins ------------------*/
-/*------------------ Basic/global items ------------------*/
-.center-flex-both {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 /*------------------ Header ------------------*/
@@ -522,10 +535,8 @@ p {
 }
 
 .header-logo {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  width: 82px;
-  height: 81px;
+  width: 81px;
+  height: 80px;
 }
 
 .header-gradient {
@@ -551,8 +562,8 @@ p {
 .navigation-button {
   display: block;
   padding: 15px 28px 12px;
-  border-radius: 6px;
-  background-color: #EE766C;
+  border-radius: 5px;
+  background-color: #f3766f;
   color: #ffffff;
   font-weight: bold;
 }
@@ -576,7 +587,7 @@ p {
 
 /*------------------ Main ------------------*/
 .main {
-  padding-top: 177px;
+  padding-top: 176px;
 }
 
 .scroll-teaser {
@@ -587,40 +598,41 @@ p {
           transform: rotate(-90deg);
 }
 
-.home {
-  background-image: url("./../portfolio-bgr.gif");
-  background-repeat: no-repeat;
-  background-position: 40px 10px;
-  background-size: cover;
-}
-
-.hero {
-  padding: 0 60px;
-  border-top: solid 1px #ffffff;
-  height: calc(100vh - 177px);
-}
-
-.hero-paragraph {
-  margin: 40px 0 30px;
-}
-
 #home::before,
-#projects::before,
-#about::before {
+#portfolio::before,
+#skillset::before {
   display: block;
   content: " ";
-  margin-top: -177px;
-  height: 177px;
+  margin-top: -176px;
+  height: 176px;
   visibility: hidden;
   pointer-events: none;
 }
 
 #home::before {
-  margin-top: -257px;
-  height: 257px;
+  margin-top: -256px;
+  height: 256px;
 }
 
-.x {
-  color: #95adaf;
+/*------------------ Hero ------------------*/
+.home {
+  background-image: url("./../Tanja-R-Portfolio-Watermark.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 42px -20px;
+  background-size: auto calc(110vh - 176px);
+}
+
+.hero {
+  padding: 0 calc(34px + 8px);
+  border-top: solid 1px #ffffff;
+  height: calc(104vh - 176px);
+}
+
+.hero-paragraph {
+  margin: 40px 10px 30px 0;
+  font-size: 1.12rem;
+  line-height: 1.5em;
+  width: 19rem;
 }
 /*# sourceMappingURL=styles.css.map */
