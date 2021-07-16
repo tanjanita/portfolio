@@ -1,13 +1,49 @@
 /*------------------ Main ------------------*/
 .main {
+  // Background-watermark
+  background-image: url("./../Tanja-R-Portfolio-Watermark.svg");
+  background-color: $colour-base-light;
+  background-position: 42px calc(#{$header-height-without-gradient} - 10px);
+  background-size: auto calc(110vh - #{$header-height-without-gradient});
+  background-repeat: no-repeat;
+
+  // shift contents below header
   padding-top: $header-height-with-gradient;
+
+  @include screen(small) {
+    background-position: 60px $header-height-without-gradient;
+    background-size: auto calc(106vh - #{$header-height-without-gradient});
+  }
+
+  @include screen(medium) {
+    background-position: 140px $header-height-without-gradient;
+  }
+
+  @include screen(large) {
+    background-position: 33vw -10vh;
+    background-size: auto 125vh;
+  }
+
+  @include screen(custom, min, 1400px) {
+    background-position: 36vw -10vh;
+    background-size: auto 125vh;
+  }
+
+  @include screen(custom, min, 1800px) {
+    background-position: 39vw -10vh;
+    background-size: auto 130vh;
+  }
 }
 
 .scroll-teaser {
   position: fixed;
-  bottom: 30px;
+  bottom: 25px;
   left: calc(50% - 1em);
   transform: rotate(-90deg);
+
+  @include screen(medium) {
+    bottom: 30px;
+  }
 }
 
 // Adding "buffer" element so link anchors don't get hidden behind the fixed header
@@ -24,6 +60,6 @@
 }
 
 #home::before {
-  margin-top: -($header-height-with-gradient+80px);
-  height: ($header-height-with-gradient+80px);
+  margin-top: -($header-height-with-gradient+60px);
+  height: ($header-height-with-gradient+60px);
 }

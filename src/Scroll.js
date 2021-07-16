@@ -2,7 +2,7 @@ import React from 'react';
 
 function Scroll() {
   return (
-    <div class="scroll-teaser">
+    <div className="scroll-teaser">
       Scroll
     </div>
   );
