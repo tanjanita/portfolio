@@ -10,8 +10,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: $header-padding-top $padding-sides $header-padding-bottom;
+    padding: $header-padding-top $padding-sides-small $header-padding-bottom;
     background-color: $colour-base-light;
+
+    @include screen(small) {
+      padding: $header-padding-top $padding-sides $header-padding-bottom;
+    }
+
+    @include screen(medium) {
+      align-items: center;
+      background-color: transparent;
+    }
+
+    @include screen(large) {
+      padding: $header-padding-top+10px $padding-sides+10px $header-padding-bottom;
+    }
   }
 
   &-logo {
@@ -22,6 +35,10 @@
   &-gradient {
     height: $header-gradient-height;
     background-image: linear-gradient($colour-base-light, rgba(255, 255, 255, 0));
+
+    @include screen(medium) {
+      background-image: none;
+    }
   }
 }
 
@@ -31,6 +48,12 @@
   justify-content: space-between;
   height: 81px;
 
+  @include screen(medium) {
+    flex-direction: row-reverse;
+    height: max-content;
+    align-items: center;
+  }
+
   &-button {
     display: block;
     padding: 15px 28px 12px;
@@ -38,6 +61,11 @@
     background-color: $colour-highlight-1;
     color: $colour-base-light;
     font-weight: bold;
+    white-space: nowrap;
+
+    @include screen(medium) {
+      margin-left: 20px;
+    }
   }
 
   &-links {
@@ -46,5 +74,12 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+
+    @include screen(medium) {
+      &-item {
+        padding: 20px;
+        margin-right: 10px;
+      }
+    }
   }
 }

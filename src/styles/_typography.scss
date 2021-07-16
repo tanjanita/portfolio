@@ -11,23 +11,44 @@ Georgia,
 Times,
 serif;
 
-// Use online calculators such as https://www.modularscale.com/ or https://type-scale.com/
 $text-body: 1rem;
-$text-huge: $text-body * 3.1;
-$text-h1: $text-body * 2.5;
-$text-h2: $text-body * 2;
-$text-h3: $text-body * 1.75;
-$text-h4: $text-body * 1.25;
-$text-h5: $text-body * 1.12;
+$text-huge: $text-body * 2.3;
+$text-h1: $text-body * 1.8;
+$text-h2: $text-body * 1.5;
+$text-h3: $text-body * 1.35;
+$text-h4: $text-body * 1.2;
+$text-h5: $text-body * 1.1;
 $text-sm: $text-body * 0.875;
 $text-xs: $text-body * 0.75;
+
+$factor-small: 1.2;
+$factor-medium: 1.3;
+$factor-large: 1.5;
 
 html {
   background: $colour-base-light;
   font-family: $font-sans-serif;
-  font-size: 100%; // 100% equals 1rem, browser standard is usually 16px. Using 100% avoids a sizing problefont-size: 100%;m in older IE browsers.
+  font-size: 100%; // 100% equals 1rem, browser standard is usually 16px. Using 100% avoids a sizing problem in older IE browsers.
   font-weight: 400;
   color: $colour-base-dark;
+}
+
+.huge {
+  font-family: $font-sans-serif;
+  font-size: $text-huge;
+  margin: 0 0 .3em;
+
+  @include screen(small) {
+    font-size: $text-huge * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-huge * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-huge * $factor-large;
+  }
 }
 
 h1,
@@ -45,36 +66,104 @@ h6 {
 
 h1 {
   font-size: $text-h1;
-  margin-top: 36px;
+  margin-top: 24px;
+
+  @include screen(small) {
+    font-size: $text-h1 * $factor-small;
+    margin-top: 36px;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h1 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h1 * $factor-large;
+  }
 }
 
 h2 {
   font-size: $text-h2;
+
+  @include screen(small) {
+    font-size: $text-h2 * $factor-small;
+    margin-top: 36px;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h2 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h2 * $factor-large;
+  }
 }
 
 h3 {
   font-size: $text-h3;
+
+  @include screen(small) {
+    font-size: $text-h3 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h3 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h3 * $factor-large;
+  }
 }
 
 h4 {
   font-size: $text-h4;
+
+  @include screen(small) {
+    font-size: $text-h4 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h4 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h4 * $factor-large;
+  }
 }
 
 h5,
 h6 {
   font-size: $text-h5;
+
+  @include screen(small) {
+    font-size: $text-h5 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h5 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h5 * $factor-large;
+  }
 }
 
 p {
   font-size: $text-body;
   line-height: 1.3em;
   margin-bottom: .8em;
-}
 
-.huge {
-  font-family: $font-sans-serif;
-  font-size: $text-huge;
-  margin: 1em 0 .3em;
+  @include screen(small) {
+    font-size: $text-body * ($factor-small - 0.15);
+  }
+
+  @include screen(medium) {
+    font-size: $text-body * ($factor-medium - 0.15);
+  }
+
+  @include screen(large) {
+    font-size: $text-body * ($factor-large - 0.25);
+  }
 }
 
 .subheading1,
@@ -87,18 +176,66 @@ p {
 
 .subheading1 {
   font-size: $text-h2;
+
+  @include screen(small) {
+    font-size: $text-h2 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h2 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h2 * $factor-large;
+  }
 }
 
 .subheading2 {
   font-size: $text-h3;
+
+  @include screen(small) {
+    font-size: $text-h3 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h3 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h3 * $factor-large;
+  }
 }
 
 .subheading3 {
   font-size: $text-h4;
+
+  @include screen(small) {
+    font-size: $text-h4 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h4 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h4 * $factor-large;
+  }
 }
 
 .subheading4 {
   font-size: $text-h5;
+
+  @include screen(small) {
+    font-size: $text-h5 * $factor-small;
+  }
+
+  @include screen(medium) {
+    font-size: $text-h5 * $factor-medium;
+  }
+
+  @include screen(large) {
+    font-size: $text-h5 * $factor-large;
+  }
 }
 
 .text-small {
