@@ -1,29 +1,16 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
 
 function Portfolio() {
   return (
-    <article>
+    <article className="portfolio">
 
-      <h1 id="portfolio">
+      <h1 className="article__headline" id="portfolio">
       Portfolio
       </h1>
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
-      This is some main content <br />
+
+      <ProjectCard />
+      <ProjectCard />
 
     </article>
   );
