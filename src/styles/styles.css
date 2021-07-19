@@ -716,6 +716,7 @@ p {
   position: fixed;
   top: 0px;
   left: 0px;
+  z-index: 100;
   width: 100%;
 }
 
@@ -970,5 +971,94 @@ p {
 
 .hero-welcome {
   padding-bottom: 25%;
+}
+
+/*------------------ Hero ------------------*/
+.article__headline {
+  margin: 30px 30px 0px;
+}
+
+.project__card {
+  position: relative;
+  margin: 30px 0 80px;
+  padding: 35px 35px 20px;
+  background-color: #354648;
+  color: #ffffff;
+}
+
+.project__card--align-right {
+  text-align: right;
+  background-color: #748B93;
+}
+
+.project__headline {
+  margin: 0 0 16px;
+  color: inherit;
+}
+
+.project__description {
+  margin-bottom: 50px;
+  line-height: 1.4em;
+}
+
+.project__button-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0 0 6px;
+}
+
+.project__button-box--align-right {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.project__button {
+  position: relative;
+  z-index: 20;
+  margin-top: 16px;
+  padding: 6px 10px 4px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #354648;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.project__button::after {
+  display: inline-block;
+  padding-left: 14px;
+  vertical-align: middle;
+  font-family: "Font Awesome 5 Free";
+  font-size: .9em;
+  font-weight: 900;
+  content: "\f061";
+}
+
+.project__image-box {
+  position: absolute;
+  width: 200px;
+  height: 154px;
+  right: 35px;
+  bottom: -30px;
+  background-color: #f3766f;
+}
+
+.project__image-box--align-right {
+  left: 35px;
+  bottom: -30px;
+  background-color: #ffe553;
+}
+
+.alternative-button {
+  background-color: #cee0e2;
 }
 /*# sourceMappingURL=styles.css.map */
