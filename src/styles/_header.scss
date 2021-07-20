@@ -11,11 +11,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: $header-padding-top $padding-sides-small $header-padding-bottom;
+    padding: $header-padding-top $padding-sides $header-padding-bottom;
     background-color: $colour-base-light;
 
     @include screen(small) {
-      padding: $header-padding-top $padding-sides $header-padding-bottom;
+      padding: $header-padding-top $padding-sides-small $header-padding-bottom;
     }
 
     @include screen(medium) {
@@ -24,7 +24,7 @@
     }
 
     @include screen(large) {
-      padding: $header-padding-top+10px $padding-sides+10px $header-padding-bottom;
+      padding: $header-padding-top+10px $padding-sides-small+10px $header-padding-bottom;
     }
   }
 
