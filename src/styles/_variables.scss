@@ -12,20 +12,22 @@ $colour-highlight-2: #ffe553;
 // charcoal logo #262626
 // charcoal writing #344648
 
-$padding-sides-small: 26px;
-$padding-sides: 34px;
+$padding-sides: 26px; // xsmall padding for screen-frame
+$padding-sides-small: 34px;
 
-$header-padding-top: 40px;
-$header-padding-bottom: 16px;
+$header-padding-top: 36px;
+$header-padding-bottom: 20px;
 $header-gradient-height: 40px;
 
 $header-logo-width: 81px;
 $header-logo-height: 80px;
 
-$watermark-logo-widht: 490px;
+$watermark-logo-width: 490px;
 $watermark-logo-height: 480px;
 
 $header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height;
 $header-height-with-gradient: $header-height-without-gradient+$header-gradient-height;
 
-$border-radius: 5px;
+$border-radius: 4px;
+
+$project-image-box-offset-medium: 84px;

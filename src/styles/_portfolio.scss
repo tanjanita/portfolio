@@ -1,38 +1,79 @@
-/*------------------ Hero ------------------*/
-.article__headline {
-  margin: 30px 30px 0px;
+/*------------------ Portfolio ------------------*/
+// Article-header styles are specified in _main.scss
+
+.portfolio {
+
+  @include screen(medium) {
+    text-align: center;
+  }
 }
 
 .project {
 
   &__card {
-    position: relative; // for absolute positioning of box
+    position: relative; // for absolute positioning of image-box
     margin: 30px 0 80px;
-    padding: 35px 35px 20px;
+    padding: $padding-sides $padding-sides;
     background-color: $colour-base-dark;
     color: $colour-base-light;
+    text-align: left;
+
+    @include screen(small) {
+      padding: $padding-sides-small $padding-sides-small $padding-sides;
+      margin: 30px 0 100px;
+    }
+
+    @include screen(medium) {
+      width: 600px;
+      margin: 30px auto 120px;
+    }
 
     &--align-right {
       text-align: right;
       background-color: $colour-base-medium;
+
+      @include screen(medium) {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: flex-end;
+      }
     }
   }
 
   &__headline {
-    margin: 0 0 16px;
+    margin: 0 0 10px;
     color: inherit;
+
+    @include screen(small) {
+      margin: 0 0 16px;
+    }
   }
 
   &__description {
     margin-bottom: 50px;
+    font-size: $text-sm;
     line-height: 1.4em;
+
+    @include screen(small) {
+      margin-bottom: 50px;
+      font-size: $text-body;
+    }
+
+    @include screen(medium) {
+      max-width: 400px;
+    }
   }
 
   &__button-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 0 6px;
+
+    @include screen(medium) {
+      flex-direction: row;
+      align-items: flex-end;
+    }
 
     &--align-right {
       align-items: flex-end;
@@ -42,17 +83,27 @@
   &__button {
     position: relative;
     z-index: 20;
-    margin-top: 16px;
     padding: 6px 10px 4px;
     border-radius: $border-radius;
     background-color: $colour-base-light;
     color: $colour-base-dark;
     font-weight: bold;
     white-space: nowrap;
+    font-size: $text-sm;
+
+    @include screen(small) {
+      font-size: $text-body;
+    }
+
+    @include screen(medium) {
+      background-color: $colour-base-light;
+      color: $colour-base-dark;
+      margin-right: 16px;
+    }
 
     &::after {
       display: inline-block;
-      padding-left: 14px;
+      padding-left: 10px;
       vertical-align: middle;
       font-family: "Font Awesome 5 Free";
       font-size: .9em;
@@ -64,19 +115,76 @@
   &__image-box {
     position: absolute;
     width: 200px;
-    height: 154px;
-    right: 35px;
-    bottom: -30px;
+    height: 146px;
+    right: $padding-sides;
+    bottom: -$padding-sides;
     background-color: $colour-highlight-1;
 
+    @include screen(small) {
+      right: $padding-sides-small;
+    }
+
+    @include screen(custom, min, 420px) {
+      right: unset;
+      left: 166px;
+    }
+
+    @include screen(medium) {
+      width: 230px;
+      height: 168px;
+      left: unset;
+      right: -$project-image-box-offset-medium;
+      top: 50px;
+    }
+
     &--align-right {
-      left: 35px;
-      bottom: -30px;
+      left: $padding-sides;
       background-color: $colour-highlight-2;
+
+      @include screen(small) {
+        left: $padding-sides-small;
+      }
+
+      @include screen(custom, min, 420px) {
+        left: unset;
+        right: 166px;
+      }
+
+      @include screen(medium) {
+        left: unset;
+        left: -$project-image-box-offset-medium;
+      }
     }
   }
 }
 
 .alternative-button {
+  margin-top: 16px;
   background-color: $colour-base-medium-light;
+
+  @include screen(medium) {
+    margin-right: 0;
+    background-color: $colour-base-medium-light;
+  }
+}
+
+.off-center {
+
+  &__container {
+
+    @include screen(medium) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--align-right {
+      @include screen(medium) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__nudge {
+    width: $project-image-box-offset-medium;
+  }
 }

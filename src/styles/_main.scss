@@ -35,6 +35,40 @@
   }
 }
 
+// Article-headers for articles, e.g. portfolio, skills
+.article {
+
+  &__header {
+    margin: $padding-sides $padding-sides;
+
+    @include screen(small) {
+      margin: $padding-sides-small $padding-sides-small 60px;
+    }
+
+    @include screen(medium) {
+      display: inline-block;
+      width: 600px+$project-image-box-offset-medium;
+      text-align: left;
+    }
+  }
+
+  &__headline {
+    margin: 30px 0 10px;
+
+    @include screen(medium) {
+      margin: 30px 0 30px;
+    }
+  }
+
+  &__description {
+    font-size: $text-body;
+
+    @include screen(medium) {
+      font-size: $text-h5;
+    }
+  }
+}
+
 .scroll-teaser {
   position: fixed;
   bottom: 25px;

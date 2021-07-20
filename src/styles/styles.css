@@ -734,13 +734,13 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 40px 26px 16px;
+  padding: 36px 26px 20px;
   background-color: #ffffff;
 }
 
 @media only screen and (min-width: 370px) {
   .header-container {
-    padding: 40px 34px 16px;
+    padding: 36px 34px 20px;
   }
 }
 
@@ -755,7 +755,7 @@ p {
 
 @media only screen and (min-width: 992px) {
   .header-container {
-    padding: 50px 44px 16px;
+    padding: 46px 44px 20px;
   }
 }
 
@@ -808,7 +808,7 @@ p {
 .navigation-button {
   display: block;
   padding: 15px 28px 12px;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #f3766f;
   color: #ffffff;
   font-weight: bold;
@@ -886,6 +886,44 @@ p {
   .main {
     background-position: 39vw -10vh;
     background-size: auto 130vh;
+  }
+}
+
+.article__header {
+  margin: 26px 26px;
+}
+
+@media only screen and (min-width: 370px) {
+  .article__header {
+    margin: 34px 34px 60px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .article__header {
+    display: inline-block;
+    width: 684px;
+    text-align: left;
+  }
+}
+
+.article__headline {
+  margin: 30px 0 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .article__headline {
+    margin: 30px 0 30px;
+  }
+}
+
+.article__description {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .article__description {
+    font-size: 1.1rem;
   }
 }
 
@@ -973,17 +1011,34 @@ p {
   padding-bottom: 25%;
 }
 
-/*------------------ Hero ------------------*/
-.article__headline {
-  margin: 30px 30px 0px;
+/*------------------ Portfolio ------------------*/
+@media only screen and (min-width: 768px) {
+  .portfolio {
+    text-align: center;
+  }
 }
 
 .project__card {
   position: relative;
   margin: 30px 0 80px;
-  padding: 35px 35px 20px;
+  padding: 26px 26px;
   background-color: #354648;
   color: #ffffff;
+  text-align: left;
+}
+
+@media only screen and (min-width: 370px) {
+  .project__card {
+    padding: 34px 34px 26px;
+    margin: 30px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__card {
+    width: 600px;
+    margin: 30px auto 120px;
+  }
 }
 
 .project__card--align-right {
@@ -991,14 +1046,52 @@ p {
   background-color: #748B93;
 }
 
+@media only screen and (min-width: 768px) {
+  .project__card--align-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
 .project__headline {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   color: inherit;
+}
+
+@media only screen and (min-width: 370px) {
+  .project__headline {
+    margin: 0 0 16px;
+  }
 }
 
 .project__description {
   margin-bottom: 50px;
+  font-size: 0.875rem;
   line-height: 1.4em;
+}
+
+@media only screen and (min-width: 370px) {
+  .project__description {
+    margin-bottom: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__description {
+    max-width: 400px;
+  }
 }
 
 .project__button-box {
@@ -1012,7 +1105,18 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 0 6px;
+}
+
+@media only screen and (min-width: 768px) {
+  .project__button-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
 }
 
 .project__button-box--align-right {
@@ -1024,18 +1128,32 @@ p {
 .project__button {
   position: relative;
   z-index: 20;
-  margin-top: 16px;
   padding: 6px 10px 4px;
-  border-radius: 5px;
+  border-radius: 4px;
   background-color: #ffffff;
   color: #354648;
   font-weight: bold;
   white-space: nowrap;
+  font-size: 0.875rem;
+}
+
+@media only screen and (min-width: 370px) {
+  .project__button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__button {
+    background-color: #ffffff;
+    color: #354648;
+    margin-right: 16px;
+  }
 }
 
 .project__button::after {
   display: inline-block;
-  padding-left: 14px;
+  padding-left: 10px;
   vertical-align: middle;
   font-family: "Font Awesome 5 Free";
   font-size: .9em;
@@ -1046,19 +1164,94 @@ p {
 .project__image-box {
   position: absolute;
   width: 200px;
-  height: 154px;
-  right: 35px;
-  bottom: -30px;
+  height: 146px;
+  right: 26px;
+  bottom: -26px;
   background-color: #f3766f;
 }
 
+@media only screen and (min-width: 370px) {
+  .project__image-box {
+    right: 34px;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .project__image-box {
+    right: unset;
+    left: 166px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__image-box {
+    width: 230px;
+    height: 168px;
+    left: unset;
+    right: -84px;
+    top: 50px;
+  }
+}
+
 .project__image-box--align-right {
-  left: 35px;
-  bottom: -30px;
+  left: 26px;
   background-color: #ffe553;
 }
 
+@media only screen and (min-width: 370px) {
+  .project__image-box--align-right {
+    left: 34px;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .project__image-box--align-right {
+    left: unset;
+    right: 166px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .project__image-box--align-right {
+    left: unset;
+    left: -84px;
+  }
+}
+
 .alternative-button {
+  margin-top: 16px;
   background-color: #cee0e2;
+}
+
+@media only screen and (min-width: 768px) {
+  .alternative-button {
+    margin-right: 0;
+    background-color: #cee0e2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .off-center__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .off-center__container--align-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.off-center__nudge {
+  width: 84px;
 }
 /*# sourceMappingURL=styles.css.map */
