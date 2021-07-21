@@ -7,7 +7,7 @@
   background-size: auto calc(110vh - #{$header-height-without-gradient});
   background-repeat: no-repeat;
 
-  // shift contents below header
+  // Shift contents below header
   padding-top: $header-height-with-gradient;
 
   @include screen(small) {
@@ -30,7 +30,6 @@
   }
 
   @include screen(custom, min, 1800px) {
-    background-position: 39vw -10vh;
     background-size: auto 130vh;
   }
 }
@@ -42,7 +41,7 @@
     margin: $padding-sides $padding-sides;
 
     @include screen(small) {
-      margin: $padding-sides-small $padding-sides-small 60px;
+      margin: $padding-sides-small $padding-sides-small;
     }
 
     @include screen(medium) {

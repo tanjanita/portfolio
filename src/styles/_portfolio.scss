@@ -1,6 +1,5 @@
 /*------------------ Portfolio ------------------*/
 // Article-header styles are specified in _main.scss
-
 .portfolio {
 
   @include screen(medium) {
@@ -11,7 +10,7 @@
 .project {
 
   &__card {
-    position: relative; // for absolute positioning of image-box
+    position: relative; // For absolute positioning of image-box below
     margin: 30px 0 80px;
     padding: $padding-sides $padding-sides;
     background-color: $colour-base-dark;
