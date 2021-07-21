@@ -1,0 +1,61 @@
+/*------------------ Skillset ------------------*/
+// Article-header styles are specified in _main.scss
+.skillset {
+
+  @include screen(medium) {
+    text-align: center;
+  }
+
+  &__collection {
+    padding: 0 $padding-sides;
+    text-align: left;
+
+    @include screen(small) {
+      padding: 0 $padding-sides-small;
+    }
+
+    @include screen(medium) {
+      max-width: 740px;
+      margin: 0 auto;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__category {
+
+    @include screen(medium) {
+      width: 28%;
+      flex-grow: 1;
+      margin: 0 12px;
+    }
+
+    &-headline {
+      margin: .8em 0 .3em;
+      color: $colour-base-dark-medium;
+    }
+  }
+
+  &__list {
+
+    display: flex;
+    flex-flow: row wrap;
+
+    &-item {
+      background-color: $colour-highlight-2-light;
+      margin: 0 8px 8px 0;
+      padding: 6px 9px 2px;
+      border-radius: $border-radius;
+      color: $colour-base-dark;
+      font-family: $font-sans-serif;
+      font-size: .9em;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+}
+
+.marker {
+  background-color: $colour-highlight-2;
+}

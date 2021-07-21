@@ -884,7 +884,6 @@ p {
 
 @media only screen and (min-width: 1800px) {
   .main {
-    background-position: 39vw -10vh;
     background-size: auto 130vh;
   }
 }
@@ -895,7 +894,7 @@ p {
 
 @media only screen and (min-width: 370px) {
   .article__header {
-    margin: 34px 34px 60px;
+    margin: 34px 34px;
   }
 }
 
@@ -1253,5 +1252,81 @@ p {
 
 .off-center__nudge {
   width: 84px;
+}
+
+/*------------------ Skillset ------------------*/
+@media only screen and (min-width: 768px) {
+  .skillset {
+    text-align: center;
+  }
+}
+
+.skillset__collection {
+  padding: 0 26px;
+  text-align: left;
+}
+
+@media only screen and (min-width: 370px) {
+  .skillset__collection {
+    padding: 0 34px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .skillset__collection {
+    max-width: 740px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .skillset__category {
+    width: 28%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin: 0 12px;
+  }
+}
+
+.skillset__category-headline {
+  margin: .8em 0 .3em;
+  color: #516369;
+}
+
+.skillset__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.skillset__list-item {
+  background-color: #fff5bc;
+  margin: 0 8px 8px 0;
+  padding: 6px 9px 2px;
+  border-radius: 4px;
+  color: #354648;
+  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: .9em;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.marker {
+  background-color: #ffe553;
 }
 /*# sourceMappingURL=styles.css.map */
