@@ -41,7 +41,7 @@
     margin: $padding-sides $padding-sides;
 
     @include screen(small) {
-      margin: $padding-sides-small $padding-sides-small;
+      margin: $padding-sides-small $padding-sides-small 0;
     }
 
     @include screen(medium) {
@@ -55,7 +55,7 @@
     margin: 30px 0 10px;
 
     @include screen(medium) {
-      margin: 30px 0 30px;
+      margin: 30px 0 20px;
     }
   }
 

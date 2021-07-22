@@ -461,7 +461,7 @@ h6 {
   font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: italic;
-  color: #f3766f;
+  color: #354648;
 }
 
 h1 {
@@ -584,7 +584,6 @@ h6 {
 p {
   font-size: 1rem;
   line-height: 1.3em;
-  margin-bottom: .8em;
 }
 
 @media only screen and (min-width: 370px) {
@@ -894,7 +893,7 @@ p {
 
 @media only screen and (min-width: 370px) {
   .article__header {
-    margin: 34px 34px;
+    margin: 34px 34px 0;
   }
 }
 
@@ -912,7 +911,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .article__headline {
-    margin: 30px 0 30px;
+    margin: 30px 0 20px;
   }
 }
 
@@ -1017,6 +1016,10 @@ p {
   }
 }
 
+.project {
+  padding-bottom: 20px;
+}
+
 .project__card {
   position: relative;
   margin: 30px 0 80px;
@@ -1036,7 +1039,7 @@ p {
 @media only screen and (min-width: 768px) {
   .project__card {
     width: 600px;
-    margin: 30px auto 120px;
+    margin: 68px auto 120px;
   }
 }
 
@@ -1194,7 +1197,7 @@ p {
 
 .project__image-box--align-right {
   left: 26px;
-  background-color: #ffe553;
+  background-color: #ffe657;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1261,21 +1264,43 @@ p {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .skillset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 15vh;
+    padding: 34px;
+  }
+  .skillset-header {
+    width: 25%;
+    margin-right: 50px;
+  }
+}
+
 .skillset__collection {
-  padding: 0 26px;
+  padding: 0 26px 78px;
   text-align: left;
 }
 
 @media only screen and (min-width: 370px) {
   .skillset__collection {
-    padding: 0 34px;
+    padding: 0 34px 102px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .skillset__collection {
-    max-width: 740px;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1286,6 +1311,19 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    max-width: 740px;
+    margin: 30px auto;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .skillset__collection {
+    width: 50%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -1301,7 +1339,7 @@ p {
 
 .skillset__category-headline {
   margin: .8em 0 .3em;
-  color: #516369;
+  color: #748B93;
 }
 
 .skillset__list {
@@ -1326,7 +1364,13 @@ p {
   white-space: nowrap;
 }
 
+@media only screen and (min-width: 992px) {
+  .skillset__list-item {
+    font-size: 1em;
+  }
+}
+
 .marker {
-  background-color: #ffe553;
+  background-color: #ffe657;
 }
 /*# sourceMappingURL=styles.css.map */
