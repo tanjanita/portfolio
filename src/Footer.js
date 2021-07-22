@@ -10,7 +10,7 @@ function Footer() {
       </div>
 
       <div className="footer__navigation">
-        <div className="navigation-links gap">
+        <div className="navigation-links footer__navigation-gap">
           <a className="navigation-links-item" href="#home">Home</a>
           <a className="navigation-links-item" href="#portfolio">Portfolio</a>
           <a className="navigation-links-item" href="#skillset">Skillset</a>
