@@ -424,7 +424,7 @@ html {
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   font-weight: 400;
-  color: #354648;
+  color: #344648;
 }
 
 .huge {
@@ -461,7 +461,7 @@ h6 {
   font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: italic;
-  color: #354648;
+  color: #344648;
 }
 
 h1 {
@@ -698,16 +698,6 @@ p {
   .subheading4 {
     font-size: 1.65rem;
   }
-}
-
-.text-small {
-  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.875rem;
-}
-
-.text-micro {
-  font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 0.75rem;
 }
 
 /*------------------ Header ------------------*/
@@ -1024,7 +1014,7 @@ p {
   position: relative;
   margin: 30px 0 80px;
   padding: 26px 26px;
-  background-color: #354648;
+  background-color: #344648;
   color: #ffffff;
   text-align: left;
 }
@@ -1133,7 +1123,7 @@ p {
   padding: 6px 10px 4px;
   border-radius: 4px;
   background-color: #ffffff;
-  color: #354648;
+  color: #344648;
   font-weight: bold;
   white-space: nowrap;
   font-size: 0.875rem;
@@ -1148,7 +1138,7 @@ p {
 @media only screen and (min-width: 768px) {
   .project__button {
     background-color: #ffffff;
-    color: #354648;
+    color: #344648;
     margin-right: 16px;
   }
 }
@@ -1357,7 +1347,7 @@ p {
   margin: 0 8px 8px 0;
   padding: 6px 9px 2px;
   border-radius: 4px;
-  color: #354648;
+  color: #344648;
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: .9em;
   font-weight: 700;
@@ -1372,5 +1362,72 @@ p {
 
 .marker {
   background-color: #ffe657;
+}
+
+/*------------------ Footer ------------------*/
+.footer {
+  background-color: #f3766f;
+  text-align: center;
+}
+
+.footer__navigation {
+  padding: 0 52px 26px;
+}
+
+.footer__bar {
+  padding: 26px 26px 26px;
+  background-color: #344648;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer__copyright {
+  color: #92a9b1;
+  font-size: 0.875rem;
+}
+
+.footer__media-links-item {
+  margin-left: 16px;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.contact {
+  padding: 65px 0 52px;
+}
+
+.contact__container {
+  text-align: left;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.contact__headline {
+  margin-bottom: .4em;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.contact__link {
+  color: #ffffff;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.gap {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

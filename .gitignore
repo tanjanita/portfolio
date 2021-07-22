@@ -1,6 +1,6 @@
 ############################# Local gitignore
 _documents
-_temp
+_work-files
 src/styles/typography-overview.html
 
 ############################# Create-React-App gitignore
