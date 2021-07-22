@@ -63,7 +63,7 @@ h6 {
   font-family: $font-serif;
   font-weight: 700;
   font-style: italic;
-  color: $colour-highlight-1;
+  color: $colour-base-dark;
 }
 
 h1 {
@@ -153,7 +153,6 @@ h6 {
 p {
   font-size: $text-body;
   line-height: 1.3em;
-  margin-bottom: .8em;
 
   @include screen(small) {
     font-size: $text-body * ($factor-small - 0.15);
