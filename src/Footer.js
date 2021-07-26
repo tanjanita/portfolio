@@ -20,8 +20,8 @@ function Footer() {
       <div className="footer__bar">
         <p className="footer__copyright">&copy; 2021 Tanja Riethm&uuml;ller</p>
         <div className="footer__media-links">
-          <a className="footer__media-links-item" href="http://"><i class="fab fa-linkedin"></i></a>
-          <a className="footer__media-links-item" href="http://"><i class="fab fa-github-square"></i></a>
+          <a className="footer__media-links-item" href="http://"><i className="fab fa-linkedin"></i></a>
+          <a className="footer__media-links-item" href="http://"><i className="fab fa-github-square"></i></a>
         </div>
       </div>
 

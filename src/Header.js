@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./Logo";
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
       <div className="header-container">
 
         <a href="#home" title="Tanja R. Front End Web Developer Logo">
-        <img className="header-logo" src="./images/Tanja-R-Portfolio-Logo.svg" alt="Tanja R. Front End Web Developer Logo" />
+          <Logo colour="#262626" />
         </a>
 
         <nav className="navigation">

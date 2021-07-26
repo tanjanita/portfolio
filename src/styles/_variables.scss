@@ -1,5 +1,4 @@
 /*------------------ Variables ------------------*/
-
 $colour-base-dark: #344648;
 $colour-base-dark-medium: #516369;
 $colour-base-medium: #748B93;
@@ -12,25 +11,31 @@ $colour-highlight-1-light: #ffb5b1;
 $colour-highlight-2: #ffe657;
 $colour-highlight-2-light: #fff5bc;
 
-// background logo watermark #e7ecf6
-// charcoal logo #262626
-
+// Side padding
 $padding-sides: 26px; // xsmall padding for screen-frame
 $padding-sides-small: 34px;
 
+// Header elements measurements
 $header-padding-top: 36px;
 $header-padding-bottom: 20px;
-$header-gradient-height: 40px;
-
+$header-gradient-height: 20px;
 $header-logo-width: 81px;
 $header-logo-height: 80px;
+// Header total heights
+$header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height+5px; // 5px added by <a> tag. total 141px
+$header-height-with-gradient: $header-height-without-gradient+$header-gradient-height; // 161px
 
+$hero-height: 386px;
+$hero-height-small: 465px;
+$hero-height-medium: 488px;
+
+// Watermark measurements
 $watermark-logo-width: 490px;
 $watermark-logo-height: 480px;
 
-$header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height;
-$header-height-with-gradient: $header-height-without-gradient+$header-gradient-height;
-
+// Miscellaneous measurements
 $border-radius: 4px;
-
 $project-image-box-offset-medium: 84px;
+
+// calculate height-padding
+$before-hero-height: calc(((100vh - #{$header-height-with-gradient}) - 384) / 2);
