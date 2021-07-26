@@ -1,14 +1,27 @@
 /*------------------ Main ------------------*/
+// Shift contents below header
 .main {
-  // Background-watermark
-  background-image: url("./../Tanja-R-Portfolio-Watermark.svg");
+  padding-top: $header-height-with-gradient;
+}
+
+.scrollFade {
+  transition: opacity 0.1s;
+}
+
+// Background-watermark
+.watermark {
+  height: 150vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  left: -15px;
+  top: 0;
+  overflow-y: hidden;
+
   background-color: $colour-base-light;
   background-position: 42px calc(#{$header-height-without-gradient} - 10px);
   background-size: auto calc(110vh - #{$header-height-without-gradient});
   background-repeat: no-repeat;
-
-  // Shift contents below header
-  padding-top: $header-height-with-gradient;
 
   @include screen(small) {
     background-position: 60px $header-height-without-gradient;
@@ -20,12 +33,12 @@
   }
 
   @include screen(large) {
-    background-position: 33vw -10vh;
+    background-position: 37vw -10vh;
     background-size: auto 125vh;
   }
 
   @include screen(custom, min, 1400px) {
-    background-position: 36vw -10vh;
+    background-position: 40vw -10vh;
     background-size: auto 125vh;
   }
 
@@ -68,18 +81,7 @@
   }
 }
 
-.scroll-teaser {
-  position: fixed;
-  bottom: 25px;
-  left: calc(50% - 1em);
-  transform: rotate(-90deg);
-
-  @include screen(medium) {
-    bottom: 30px;
-  }
-}
-
-// Adding "buffer" element so link anchors don't get hidden behind the fixed header
+// Buffer element to avoid link anchors getting hidden behind fixed header
 // Maximum support solution, whithout having to introduce empty spans
 #home::before,
 #portfolio::before,
@@ -93,6 +95,16 @@
 }
 
 #home::before {
-  margin-top: -($header-height-with-gradient+60px);
-  height: ($header-height-with-gradient+60px);
+  margin-top: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height})) * -0.5) - #{$header-height-with-gradient});
+  height: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height})) * 0.5) + #{$header-height-with-gradient});
+
+  @include screen(small) {
+    margin-top: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height-small})) * -0.5) - #{$header-height-with-gradient});
+    height: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height-small})) * 0.5) + #{$header-height-with-gradient});
+  }
+
+  @include screen(medium) {
+    margin-top: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height-medium})) * -0.5) - #{$header-height-with-gradient});
+    height: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height-medium})) * 0.5) + #{$header-height-with-gradient});
+  }
 }

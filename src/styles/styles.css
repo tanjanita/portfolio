@@ -418,6 +418,10 @@ fieldset {
           align-items: center;
 }
 
+.highlight1 {
+  color: #f3766f;
+}
+
 /*------------------ Typography ------------------*/
 html {
   background: #ffffff;
@@ -754,7 +758,7 @@ p {
 }
 
 .header-gradient {
-  height: 40px;
+  height: 20px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(rgba(255, 255, 255, 0)));
   background-image: linear-gradient(#ffffff, rgba(255, 255, 255, 0));
 }
@@ -836,43 +840,57 @@ p {
 
 /*------------------ Main ------------------*/
 .main {
-  background-image: url("./../Tanja-R-Portfolio-Watermark.svg");
+  padding-top: 161px;
+}
+
+.scrollFade {
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.watermark {
+  height: 150vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+  left: -15px;
+  top: 0;
+  overflow-y: hidden;
   background-color: #ffffff;
-  background-position: 42px calc(136px - 10px);
-  background-size: auto calc(110vh - 136px);
+  background-position: 42px calc(141px - 10px);
+  background-size: auto calc(110vh - 141px);
   background-repeat: no-repeat;
-  padding-top: 176px;
 }
 
 @media only screen and (min-width: 370px) {
-  .main {
-    background-position: 60px 136px;
-    background-size: auto calc(106vh - 136px);
+  .watermark {
+    background-position: 60px 141px;
+    background-size: auto calc(106vh - 141px);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .main {
-    background-position: 140px 136px;
+  .watermark {
+    background-position: 140px 141px;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .main {
-    background-position: 33vw -10vh;
+  .watermark {
+    background-position: 37vw -10vh;
     background-size: auto 125vh;
   }
 }
 
 @media only screen and (min-width: 1400px) {
-  .main {
-    background-position: 36vw -10vh;
+  .watermark {
+    background-position: 40vw -10vh;
     background-size: auto 125vh;
   }
 }
 
 @media only screen and (min-width: 1800px) {
-  .main {
+  .watermark {
     background-size: auto 130vh;
   }
 }
@@ -915,6 +933,37 @@ p {
   }
 }
 
+#home::before,
+#portfolio::before,
+#skillset::before {
+  display: block;
+  content: " ";
+  margin-top: -161px;
+  height: 161px;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#home::before {
+  margin-top: calc(((100vh - (161px + 386px)) * -0.5) - 161px);
+  height: calc(((100vh - (161px + 386px)) * 0.5) + 161px);
+}
+
+@media only screen and (min-width: 370px) {
+  #home::before {
+    margin-top: calc(((100vh - (161px + 465px)) * -0.5) - 161px);
+    height: calc(((100vh - (161px + 465px)) * 0.5) + 161px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #home::before {
+    margin-top: calc(((100vh - (161px + 488px)) * -0.5) - 161px);
+    height: calc(((100vh - (161px + 488px)) * 0.5) + 161px);
+  }
+}
+
+/*------------------ Scroll ------------------*/
 .scroll-teaser {
   position: fixed;
   bottom: 25px;
@@ -929,22 +978,6 @@ p {
   }
 }
 
-#home::before,
-#portfolio::before,
-#skillset::before {
-  display: block;
-  content: " ";
-  margin-top: -176px;
-  height: 176px;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-#home::before {
-  margin-top: -236px;
-  height: 236px;
-}
-
 /*------------------ Hero ------------------*/
 .hero {
   display: -webkit-box;
@@ -954,7 +987,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 11%;
-  height: calc(100vh - 176px);
+  height: calc(100vh - 161px);
 }
 
 @media only screen and (min-width: 410px) {
@@ -996,7 +1029,7 @@ p {
 }
 
 .hero-welcome {
-  padding-bottom: 25%;
+  padding-bottom: 32%;
 }
 
 /*------------------ Portfolio ------------------*/

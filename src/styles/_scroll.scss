@@ -1,0 +1,11 @@
+/*------------------ Scroll ------------------*/
+.scroll-teaser {
+  position: fixed;
+  bottom: 25px;
+  left: calc(50% - 1em);
+  transform: rotate(-90deg);
+
+  @include screen(medium) {
+    bottom: 30px;
+  }
+}
