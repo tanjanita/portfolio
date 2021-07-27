@@ -1,4 +1,4 @@
-const scrollFadePoint = window.screen.availHeight/2.5;
+const scrollFadePoint = window.screen.availHeight/2;
  
 window.addEventListener("scroll", () => {
   const currentScroll = window.pageYOffset;

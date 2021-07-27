@@ -7,34 +7,34 @@ function ProjectCard(props) {
 
     <div className="project">
 
-      <div className="off-center__container">
-        <div className="project__card">
+      <div className="project-card__container">
+        <div className="project-card__off-center-nudge"></div>
+        <div className="project-card">
           <h2 className="project__headline">Project.Name</h2>
           <p className="project__description">
-        Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
+            Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
           </p>
-          <div className="project__button-box">
+          <div className="project__button-container">
             <a className="project__button" href="mailto:riethmueller@mail.com">Open the page</a>
             <a className="project__button alternative-button" href="mailto:riethmueller@mail.com">Check out the code</a>
           </div>
           <div className="project__image-box"> </div>
         </div>
-        <div className="off-center__nudge"></div>
-        </div>     
+      </div>     
 
-      <div className="off-center__container off-center__container--align-right">
-        <div className="project__card project__card--align-right">
+      <div className="project-card__container project-card__container--align-right">
+        <div className="project-card__off-center-nudge"></div>
+        <div className="project-card project-card--align-right">
           <h2 className="project__headline">Project.Name</h2>
           <p className="project__description">
-        Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
+            Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
           </p>
-          <div className="project__button-box project__button-box--align-right">
+          <div className="project__button-container project__button-container--align-right">
             <a className="project__button" href="mailto:riethmueller@mail.com">Open the page</a>
             <a className="project__button alternative-button" href="mailto:riethmueller@mail.com">Check out the code</a>
           </div>
           <div className="project__image-box project__image-box--align-right"> </div>
         </div>
-        <div className="off-center__nudge"></div>
       </div>
 
     </div>

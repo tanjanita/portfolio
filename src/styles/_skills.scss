@@ -11,7 +11,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 15vh;
+    margin-bottom: 12vh;
     padding: $padding-sides-small;
 
     &-header {
@@ -25,7 +25,7 @@
     text-align: left;
 
     @include screen(small) {
-      padding: 0 $padding-sides-small 3*$padding-sides-small;
+      padding: 10px $padding-sides-small 3*$padding-sides-small;
     }
 
     @include screen(medium) {
@@ -44,6 +44,13 @@
     }
   }
 
+}
+
+.list {
+
+  display: flex;
+  flex-flow: row wrap;
+
   &__category {
 
     @include screen(medium) {
@@ -53,35 +60,29 @@
     }
 
     &-headline {
-      margin: .8em 0 .3em;
+      margin: .8em 0 .4em;
       color: $colour-base-medium;
     }
 
   }
 
-  &__list {
+  &__item {
+    background-color: $colour-highlight-2-light;
+    margin: 0 8px 8px 0;
+    padding: 6px 9px 2px;
+    border-radius: $border-radius;
+    color: $colour-base-dark;
+    font-family: $font-sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+    white-space: nowrap;
 
-    display: flex;
-    flex-flow: row wrap;
+    &--highlighted {
+      background-color: $colour-highlight-2;
+    }
 
-    &-item {
-      background-color: $colour-highlight-2-light;
-      margin: 0 8px 8px 0;
-      padding: 6px 9px 2px;
-      border-radius: $border-radius;
-      color: $colour-base-dark;
-      font-family: $font-sans-serif;
-      font-size: .9em;
-      font-weight: 700;
-      white-space: nowrap;
-
-      @include screen(large) {
-        font-size: 1em;
-      }
+    @include screen(large) {
+      font-size: 1em;
     }
   }
-}
-
-.marker {
-  background-color: $colour-highlight-2;
 }

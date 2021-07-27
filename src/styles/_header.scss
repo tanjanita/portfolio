@@ -6,7 +6,7 @@
   z-index: 100;
   width: 100%;
 
-  &-container {
+  &__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -20,7 +20,7 @@
 
     @include screen(medium) {
       align-items: center;
-      background-color: transparent;
+      // background-color: rgba(255, 255, 255, 1);
     }
 
     @include screen(large) {
@@ -28,17 +28,17 @@
     }
   }
 
-  &-logo {
+  &__logo {
     width: $header-logo-width;
     height: $header-logo-height;
   }
 
-  &-gradient {
+  &__gradient {
     height: $header-gradient-height;
     background-image: linear-gradient($colour-base-light, rgba(255, 255, 255, 0));
 
     @include screen(medium) {
-      background-image: none;
+      // background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
     }
   }
 }
@@ -55,7 +55,7 @@
     align-items: center;
   }
 
-  &-button {
+  &__button {
     display: block;
     padding: 15px 28px 12px;
     border-radius: $border-radius;
@@ -69,7 +69,7 @@
     }
   }
 
-  &-links {
+  &__menu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

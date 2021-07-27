@@ -7,7 +7,7 @@ function Logo(props) {
   } 
   
   return (
-    <svg {...(blurFilter ? {className: 'watermark scrollFade'} : {className: 'header-logo'})} width="110" height="108" viewBox="0 0 29.104 28.575" xmlns="http://www.w3.org/2000/svg">
+    <svg {...(blurFilter ? {className: 'watermark scrollFade'} : {className: 'header__logo'})} width="110" height="108" viewBox="0 0 29.104 28.575" xmlns="http://www.w3.org/2000/svg">
       { blurFilter &&
         <defs>
           <filter id="blurFilter" x="0" y="0"><feGaussianBlur in="SourceGraphic" stdDeviation=".15" result="blur"/></filter>

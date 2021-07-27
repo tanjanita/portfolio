@@ -25,9 +25,10 @@ $header-logo-height: 80px;
 $header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height+5px; // 5px added by <a> tag. total 141px
 $header-height-with-gradient: $header-height-without-gradient+$header-gradient-height; // 161px
 
-$hero-height: 386px;
-$hero-height-small: 465px;
-$hero-height-medium: 488px;
+// Hero-height to set buffer for link anchors
+$hero-height: 370px;
+$hero-height-small: 445px;
+$hero-height-medium: 468px;
 
 // Watermark measurements
 $watermark-logo-width: 490px;
@@ -36,6 +37,3 @@ $watermark-logo-height: 480px;
 // Miscellaneous measurements
 $border-radius: 4px;
 $project-image-box-offset-medium: 84px;
-
-// calculate height-padding
-$before-hero-height: calc(((100vh - #{$header-height-with-gradient}) - 384) / 2);
