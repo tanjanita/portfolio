@@ -35,24 +35,6 @@ html {
   color: $colour-base-dark;
 }
 
-.huge {
-  font-family: $font-sans-serif;
-  font-size: $text-huge;
-  margin: 0 0 .3em;
-
-  @include screen(small) {
-    font-size: $text-huge * $factor-small;
-  }
-
-  @include screen(medium) {
-    font-size: $text-huge * $factor-medium;
-  }
-
-  @include screen(large) {
-    font-size: $text-huge * $factor-large;
-  }
-}
-
 h1,
 h2,
 h3,

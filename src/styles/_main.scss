@@ -14,36 +14,33 @@
   width: 100vw;
   position: absolute;
   z-index: -1;
-  left: -15px;
   top: 0;
+  left: -15px;
   overflow-y: hidden;
 
-  background-color: $colour-base-light;
-  background-position: 42px calc(#{$header-height-without-gradient} - 10px);
-  background-size: auto calc(110vh - #{$header-height-without-gradient});
+  background-position: 25vw $header-height-without-gradient;
+  background-size: auto calc(106vh - #{$header-height-without-gradient});
   background-repeat: no-repeat;
-
-  @include screen(small) {
-    background-position: 60px $header-height-without-gradient;
-    background-size: auto calc(106vh - #{$header-height-without-gradient});
-  }
-
-  @include screen(medium) {
-    background-position: 140px $header-height-without-gradient;
-  }
+  background-color: $colour-base-light;
 
   @include screen(large) {
-    background-position: 37vw -10vh;
-    background-size: auto 125vh;
+    background-position: 34vw -5vh;
+    background-size: auto 115vh;
   }
 
-  @include screen(custom, min, 1400px) {
-    background-position: 40vw -10vh;
-    background-size: auto 125vh;
+  @include screen(xlarge) {
+    background-position: 34vw -8vh;
+    background-size: auto 124vh;
   }
 
   @include screen(custom, min, 1800px) {
-    background-size: auto 130vh;
+    background-position: 41vw -10vh;
+    background-size: auto 120vh;
+  }
+
+  @include screen(custom, min, 2200px) {
+    background-position: 44vw -10vh;
+    background-size: auto 120vh;
   }
 }
 
@@ -107,4 +104,18 @@
     margin-top: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height-medium})) * -0.5) - #{$header-height-with-gradient});
     height: calc(((100vh - (#{$header-height-with-gradient} + #{$hero-height-medium})) * 0.5) + #{$header-height-with-gradient});
   }
+}
+
+#skillset::before {
+
+  @include screen(large) {
+    margin-top: calc(((380px + 100vh - (#{$header-height-with-gradient} + #{$hero-height-medium})) * -0.5) - #{$header-height-with-gradient});
+    height: calc(((380px + 100vh - (#{$header-height-with-gradient} + #{$hero-height-medium})) * 0.5) + #{$header-height-with-gradient});
+  }
+
+  @include screen(custom, min, 1400px) {
+    margin-top: -$header-height-with-gradient;
+    height: $header-height-with-gradient;
+  }
+
 }

@@ -10,18 +10,18 @@ function Footer() {
       </div>
 
       <div className="footer__navigation">
-        <div className="navigation-links footer__navigation-gap">
-          <a className="navigation-links-item" href="#home">Home</a>
-          <a className="navigation-links-item" href="#portfolio">Portfolio</a>
-          <a className="navigation-links-item" href="#skillset">Skillset</a>
+        <div className="navigation__menu footer__navigation-gap">
+          <a className="navigation__menu-item" href="#home">Home</a>
+          <a className="navigation__menu-item" href="#portfolio">Portfolio</a>
+          <a className="navigation__menu-item" href="#skillset">Skillset</a>
         </div>
       </div>
 
       <div className="footer__bar">
-        <p className="footer__copyright">&copy; 2021 Tanja Riethm&uuml;ller</p>
-        <div className="footer__media-links">
-          <a className="footer__media-links-item" href="http://"><i className="fab fa-linkedin"></i></a>
-          <a className="footer__media-links-item" href="http://"><i className="fab fa-github-square"></i></a>
+        <p className="copyright">&copy; 2021 Tanja Riethm&uuml;ller</p>
+        <div className="media-links">
+          <a className="media-links__item" href="http://"><i className="fab fa-linkedin"></i></a>
+          <a className="media-links__item" href="http://"><i className="fab fa-github-square"></i></a>
         </div>
       </div>
 

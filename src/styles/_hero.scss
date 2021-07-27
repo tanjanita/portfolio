@@ -11,16 +11,51 @@
   }
 
   @include screen(medium) {
-    margin: 0 auto;
-    padding: 0 20%;
+    justify-content: center;
   }
 
-  @include screen(custom, min, 1400px) {
-    padding: 0 30%;
+  &__container {
+
+    @include screen(xlarge) {
+      // display: inline-block;
+      // width: 600px+$project-image-box-offset-medium;
+      // text-align: left;
+    }
   }
 
-  &-paragraph {
-    margin: 20px 10px 25px 0;
+  &__headline {
+    font-family: $font-sans-serif;
+    font-size: $text-huge;
+    margin: 0 0 .3em;
+
+    @include screen(small) {
+      font-size: $text-huge * $factor-small;
+    }
+
+    @include screen(medium) {
+      font-size: $text-huge * $factor-medium;
+    }
+
+    @include screen(large) {
+      font-size: $text-huge * $factor-large;
+    }
+  }
+
+  &__title {
+    color: $colour-highlight-1;
+    margin-top: 0;
+
+    @include screen(small) {
+      margin-top: 1em;
+    }
+  }
+
+  &__subtitle {
+    @extend .subheading1;
+  }
+
+  &__introduction {
+    margin: 20px 0 25px;
     line-height: 1.5em;
 
     @include screen(small) {
@@ -34,8 +69,17 @@
     }
   }
 
-  &-welcome {
-    padding-bottom: 32%;
+  &__welcome {
+    @extend .subheading4;
+    padding-bottom: 70px;
+
+    @include screen(small) {
+      padding-bottom: 90px;
+    }
+
+    @include screen(medium) {
+      padding-bottom: 110px;
+    }
   }
 
 }

@@ -11,7 +11,7 @@
 
   padding-bottom: 20px;
 
-  &__card {
+  &-card {
     position: relative; // For absolute positioning of image-box below
     margin: 30px 0 80px;
     padding: $padding-sides $padding-sides;
@@ -40,6 +40,24 @@
         align-items: flex-end;
       }
     }
+
+    &__container {
+
+      @include screen(medium) {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+
+      &--align-right {
+        @include screen(medium) {
+          flex-direction: row;
+        }
+      }
+    }
+
+    &__off-center-nudge {
+      width: $project-image-box-offset-medium;
+    }
   }
 
   &__headline {
@@ -66,7 +84,7 @@
     }
   }
 
-  &__button-box {
+  &__button-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -166,26 +184,5 @@
   @include screen(medium) {
     margin-right: 0;
     background-color: $colour-base-medium-light;
-  }
-}
-
-.off-center {
-
-  &__container {
-
-    @include screen(medium) {
-      display: flex;
-      flex-direction: row;
-    }
-
-    &--align-right {
-      @include screen(medium) {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-
-  &__nudge {
-    width: $project-image-box-offset-medium;
   }
 }

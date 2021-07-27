@@ -1,4 +1,52 @@
 /*------------------ Footer ------------------*/
+.footer {
+  background-color: $colour-highlight-1;
+  text-align: center;
+
+  &__navigation {
+    padding: 0 2*$padding-sides $padding-sides;
+
+    @include screen(small) {
+      padding: 0 2*$padding-sides-small $padding-sides-small;
+    }
+
+    @include screen(medium) {
+      padding: 0 2*$padding-sides-small .7*$padding-sides-small;
+    }
+
+    &-gap {
+      justify-content: center;
+      column-gap: 20px;
+
+      @include screen(small) {
+        column-gap: 30px;
+      }
+
+      @include screen(medium) {
+        column-gap: 0px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__bar {
+    padding: $padding-sides $padding-sides .75*$padding-sides;
+    background-color: $colour-base-dark;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen(small) {
+      padding: $padding-sides-small $padding-sides-small .75*$padding-sides-small;
+    }
+
+    @include screen(large) {
+      padding: $padding-sides-small 44px .75*$padding-sides-small;
+    }
+  }
+}
+
 .contact {
   padding: 2.5*$padding-sides 0 2*$padding-sides;
 
@@ -49,76 +97,26 @@
   }
 }
 
-.footer {
-  background-color: $colour-highlight-1;
-  text-align: center;
+.copyright {
+  color: $colour-base-medium-lighter;
+  font-size: $text-sm;
+}
 
-  &__navigation {
-    padding: 0 2*$padding-sides $padding-sides;
+.media-links {
+
+  &__item {
+    margin-left: 20px;
+    color: $colour-base-light;
+    font-size: 1.4em;
 
     @include screen(small) {
-      padding: 0 2*$padding-sides-small $padding-sides-small;
+      margin-left: 26px;
+      font-size: 1.6em;
     }
 
     @include screen(medium) {
-      padding: 0 2*$padding-sides-small .7*$padding-sides-small;
-    }
-
-    &-gap {
-      justify-content: center;
-      column-gap: 20px;
-
-      @include screen(small) {
-        column-gap: 30px;
-      }
-
-      @include screen(medium) {
-        column-gap: 0px;
-        margin-left: 0;
-      }
-    }
-  }
-
-  &__bar {
-    padding: $padding-sides $padding-sides .75*$padding-sides;
-    background-color: $colour-base-dark;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include screen(small) {
-      padding: $padding-sides-small $padding-sides-small .75*$padding-sides-small;
-    }
-
-    @include screen(large) {
-      padding: $padding-sides-small 44px .75*$padding-sides-small;
-    }
-  }
-
-  &__copyright {
-    color: $colour-base-medium-lighter;
-    font-size: $text-sm;
-  }
-
-  &__media-links {
-
-    &-item {
-      margin-left: 20px;
-      color: $colour-base-light;
-      font-size: 1.4em;
-
-      @include screen(small) {
-        margin-left: 26px;
-        font-size: 1.6em;
-      }
-
-      @include screen(medium) {
-        margin-left: 26px;
-        font-size: 1.8em;
-      }
-
-
+      margin-left: 26px;
+      font-size: 1.8em;
     }
   }
 }

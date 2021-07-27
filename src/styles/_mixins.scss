@@ -1,23 +1,15 @@
 /*------------------ Mixins ------------------*/
 
-// BREAKPOINTS - with viewport widths adopted from bootstrap
-
+// BREAKPOINTS - viewport widths adopted from bootstrap
 // Extra small devices (small portrait phones)
 // (No media query since this is the default in mobile-first design)
-
-// // Small devices (landscape phones)
-// $breakpoint-small: 576px;
-
 // Small devices (larger phones)
 $breakpoint-small: 370px;
-
 // Medium devices (tablets)
 $breakpoint-medium: 768px;
-
-// Large devices (desktops)
+// Large devices (smaller desktops)
 $breakpoint-large: 992px;
-
-// Extra large devices (large desktops, 1200px and up)
+// Extra large devices (desktops, 1200px and up)
 $breakpoint-xlarge: 1200px;
 
 @mixin screen($size, $minmax: min, $breakpoint: $breakpoint-small) {
@@ -57,8 +49,3 @@ $breakpoint-xlarge: 1200px;
     @content;
   }
 }
-
-// Usage example:
-// @include screen(small) {
-//   ... specify css, e.g. color: red;
-// }
