@@ -11,15 +11,15 @@ Georgia,
 'Times New Roman',
 Times,
 serif;
-// Source Serif Pro: wght@400;700;900, italic
+// Source Serif Pro: wght@400;700, normal/italic
 
 $text-body: 1rem;
 $text-huge: $text-body * 2.3;
-$text-h1: $text-body * 1.8;
-$text-h2: $text-body * 1.5;
-$text-h3: $text-body * 1.35;
-$text-h4: $text-body * 1.2;
-$text-h5: $text-body * 1.1;
+$text-h1: $text-body * 2;
+$text-h2: $text-body * 1.8;
+$text-h3: $text-body * 1.5;
+$text-h4: $text-body * 1.35;
+$text-h5: $text-body * 1.2;
 $text-sm: $text-body * 0.875;
 $text-xs: $text-body * 0.75;
 

@@ -2,18 +2,22 @@ import React from 'react';
 
 function Skills() {
   return (
-    <article className="skillset">
+    <article className="article skillset">
 
       <div className="article__header skillset-header">
-        <h1 className="article__headline" id="skillset">Skillset</h1>
+        <h2 className="article__headline" id="skillset">Skillset</h2>
+        <p className="article__description">Reprehenderit esse labore id <strong>veniam</strong> ut veniam <strong>adipisicing amet</strong> non ex ullamco dolor proident. <strong>Exercitation velit</strong> ea incididunt. Reprehenderit esse labore id <strong>veniam</strong> ut veniam <strong>adipisicing amet</strong> non ex ullamco dolor proident. <strong>Exercitation velit</strong> ea incididunt.</p>
+
         <p className="article__description">Reprehenderit esse labore id <strong>veniam</strong> ut veniam <strong>adipisicing amet</strong> non ex ullamco dolor proident. <strong>Exercitation velit</strong> ea incididunt.</p>
+
         <p className="article__description">Coursework vs. practical usage & experience.</p>
+        {/* Check if text is long enough for anchor-link positioning or if ::before block needs to be adapted */}
       </div>
 
       <div className="skillset__collection">
 
         <div className="list__category">
-          <h4 className="list__category-headline">The Basics</h4>
+          <h3 className="list__category-headline">The Basics</h3>
           <ul className="list">
             <li className="list__item list__item--highlighted">HTML/5</li>
             <li className="list__item list__item--highlighted">CSS/3</li>
@@ -27,7 +31,7 @@ function Skills() {
         </div>
 
         <div className="list__category">
-          <h4 className="list__category-headline">Frameworks<sup>*</sup></h4>
+          <h3 className="list__category-headline">Frameworks<sup>*</sup></h3>
           <ul className="list">
             <li className="list__item list__item--highlighted">REACT</li>
             <li className="list__item">jQuery</li>
@@ -43,7 +47,7 @@ function Skills() {
         </div>
 
         <div className="list__category">
-          <h4 className="list__category-headline">Software<sup>*</sup></h4>
+          <h3 className="list__category-headline">Software<sup>*</sup></h3>
           <ul className="list">
             <li className="list__item list__item--highlighted">VS Code</li>
             <li className="list__item list__item--highlighted">GitHub</li>
@@ -56,7 +60,7 @@ function Skills() {
         </div>
 
         <div className="list__category">
-          <h4 className="list__category-headline">Conceptual</h4>
+          <h3 className="list__category-headline">Conceptual</h3>
           <ul className="list">
             <li className="list__item list__item--highlighted">Version control workflow</li>
             <li className="list__item list__item--highlighted">Problem solving strategies</li>
@@ -66,13 +70,13 @@ function Skills() {
         </div>
 
         <div className="list__category">
-          <h4 className="list__category-headline">[AFK]</h4>
+          <h3 className="list__category-headline">[AFK]</h3>
           <ul className="list">
             <li className="list__item">Nature explorer</li>
             <li className="list__item">Japanophile</li>
             <li className="list__item">Photography dabbler</li>
             <li className="list__item">Art lover</li>
-            <li className="list__item">A fool for cats and all things cute ^._.^ฅ</li>
+            <li className="list__item">Fool for cats and all things cute ^._.^ฅ</li>
           </ul>
         </div>
 

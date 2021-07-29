@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding: 0 11%;
-  height: calc(100vh - #{$header-height-with-gradient});
+  height: calc(100vh - #{$header-height});
 
   // Adjust padding flexibly to keep headline in one line
   @include screen(custom, min, 410px) {
@@ -12,15 +12,6 @@
 
   @include screen(medium) {
     justify-content: center;
-  }
-
-  &__container {
-
-    @include screen(xlarge) {
-      // display: inline-block;
-      // width: 600px+$project-image-box-offset-medium;
-      // text-align: left;
-    }
   }
 
   &__headline {

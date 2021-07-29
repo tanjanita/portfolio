@@ -65,9 +65,10 @@
   }
 
   &__headline {
+    @extend h3;
     margin-bottom: .4em;
     color: $colour-base-light;
-    font-weight: normal;
+    font-weight: 400;
 
     @include screen(small) {
       margin-bottom: .5em;

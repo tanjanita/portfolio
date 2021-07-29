@@ -18,12 +18,16 @@ $padding-sides-small: 34px;
 // Header elements measurements
 $header-padding-top: 36px;
 $header-padding-bottom: 20px;
-$header-gradient-height: 20px;
+$header-gradient-height: 10px;
 $header-logo-width: 81px;
 $header-logo-height: 80px;
-// Header total heights
-$header-height-without-gradient: $header-padding-top+$header-padding-bottom+$header-logo-height+5px; // 5px added by <a> tag. total 141px
-$header-height-with-gradient: $header-height-without-gradient+$header-gradient-height; // 161px
+
+// Additional padding for header top and sides on large screens
+$additional-padding-large: 10px;
+
+// Header height (5px added by <a>-tag)
+$header-height: $header-padding-top+$header-padding-bottom+$header-logo-height+5px+$header-gradient-height;
+$header-height-large: $header-height+$additional-padding-large;
 
 // Hero-height to set buffer for link anchors
 $hero-height: 370px;
