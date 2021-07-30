@@ -1,32 +1,22 @@
 /*------------------ Portfolio ------------------*/
-// Article-header styles are specified in _main.scss
-.portfolio {
-
-  @include screen(medium) {
-    text-align: center;
-  }
-}
-
 .project {
-
-  padding-bottom: 20px;
 
   &-card {
     position: relative; // For absolute positioning of image-box below
-    margin: 30px 0 80px;
+    margin: 30px 0 70px;
     padding: $padding-sides $padding-sides;
     background-color: $colour-base-dark;
     color: $colour-base-light;
     text-align: left;
 
     @include screen(small) {
+      margin: 40px 0 100px;
       padding: $padding-sides-small $padding-sides-small $padding-sides;
-      margin: 30px 0 100px;
     }
 
     @include screen(medium) {
       width: 600px;
-      margin: 2*$padding-sides-small auto 120px;
+      margin: 2*$padding-sides-small auto 2*$padding-sides-small;
     }
 
     &--align-right {
@@ -106,7 +96,7 @@
     border-radius: $border-radius;
     background-color: $colour-base-light;
     color: $colour-base-dark;
-    font-weight: bold;
+    font-weight: 700;
     white-space: nowrap;
     font-size: $text-sm;
 
@@ -120,14 +110,10 @@
       margin-right: 16px;
     }
 
-    &::after {
-      display: inline-block;
-      padding-left: 10px;
+    &-icon {
+      margin-left: 8px;
       vertical-align: middle;
-      font-family: "Font Awesome 5 Free";
       font-size: .9em;
-      font-weight: 900;
-      content: "\f061"; // fas fa-arrow-right
     }
   }
 

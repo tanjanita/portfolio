@@ -3,8 +3,8 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 100;
   width: 100%;
+  z-index: 100;
 
   &__container {
     display: flex;
@@ -12,7 +12,6 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: $header-padding-top $padding-sides $header-padding-bottom;
-    background-color: $colour-base-light;
 
     @include screen(small) {
       padding: $header-padding-top $padding-sides-small $header-padding-bottom;
@@ -20,11 +19,10 @@
 
     @include screen(medium) {
       align-items: center;
-      // background-color: rgba(255, 255, 255, 1);
     }
 
     @include screen(large) {
-      padding: $header-padding-top+10px $padding-sides-small+10px $header-padding-bottom;
+      padding: $header-padding-top+$additional-padding-large $padding-sides-small+$additional-padding-large $header-padding-bottom;
     }
   }
 
@@ -33,12 +31,18 @@
     height: $header-logo-height;
   }
 
-  &__gradient {
-    height: $header-gradient-height;
-    background-image: linear-gradient($colour-base-light, rgba(255, 255, 255, 0));
+  &__background {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    height: $header-height;
+    background-image: linear-gradient(rgba(253, 249, 45, 0.473) 95%, rgba(253, 250, 45, 0) 100%);
+    background-image: linear-gradient($colour-base-light 95%, rgba(253, 250, 45, 0) 100%);
 
-    @include screen(medium) {
-      // background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    @include screen(large) {
+      height: $header-height-large;
+      opacity: 0;
     }
   }
 }
@@ -61,7 +65,7 @@
     border-radius: $border-radius;
     background-color: $colour-highlight-1;
     color: $colour-base-light;
-    font-weight: bold;
+    font-weight: 700;
     white-space: nowrap;
 
     @include screen(medium) {

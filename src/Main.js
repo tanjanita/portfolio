@@ -13,7 +13,7 @@ function Main() {
   return (
     <main className="main">
 
-      <div className="watermark scrollFade" style={{ backgroundImage: `url("data:image/svg+xml,${svgString}")` }}></div>
+      <div className="watermark scrollFade" style={{backgroundImage: `url("data:image/svg+xml,${svgString}")`}}></div>
       
       <Scroll />
       <Hero />

@@ -6,24 +6,19 @@ function Header() {
     <header className="header">
 
       <div className="header__container">
-
-        <a href="#home" title="Tanja R. Front End Web Developer Logo">
+        <a href="#top">
+          <span className="screen-reader-only">Top of page</span>
           <Logo colour="#262626" />
         </a>
-
         <nav className="navigation">
-
           <a className="navigation__button" href="mailto:riethmueller@mail.com">Contact me</a>
-
           <div className="navigation__menu">
             <a className="navigation__menu-item" href="#portfolio">Portfolio</a>
             <a className="navigation__menu-item" href="#skillset">Skillset</a>
           </div>
-
         </nav> 
-
       </div>
-      <div className="header__gradient"> </div>
+      <div className="header__background scrollFadeIn"> </div>
 
     </header>
   );
