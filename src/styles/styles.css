@@ -1213,14 +1213,10 @@ p {
   }
 }
 
-.project__button::after {
-  display: inline-block;
-  padding-left: 10px;
+.project__button-icon {
+  margin-left: 8px;
   vertical-align: middle;
-  font-family: "Font Awesome 5 Free";
   font-size: .9em;
-  font-weight: 900;
-  content: "\f061";
 }
 
 .project__image-box {
@@ -1397,6 +1393,17 @@ p {
   white-space: nowrap;
 }
 
+.list__item-icon {
+  margin: 0 7px 0 0;
+  color: #8d772f;
+  font-size: 1em;
+}
+
+.list__item-icon--small {
+  margin: 0 10px 1px 3px;
+  font-size: .6em;
+}
+
 .list__item--highlighted {
   background-color: #ffe657;
 }
@@ -1550,22 +1557,22 @@ p {
 }
 
 .media-links__item {
-  margin-left: 20px;
+  margin-left: 14px;
   color: #ffffff;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
 @media only screen and (min-width: 370px) {
   .media-links__item {
-    margin-left: 26px;
-    font-size: 1.6em;
+    margin-left: 20px;
+    font-size: 1.7em;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .media-links__item {
     margin-left: 26px;
-    font-size: 1.8em;
+    font-size: 1.9em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

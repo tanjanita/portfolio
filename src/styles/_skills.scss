@@ -82,6 +82,19 @@
     font-weight: 700;
     white-space: nowrap;
 
+    &-icon {
+      margin: 0 7px 0 0;
+      color: rgb(141, 119, 47);
+      // color: rgb(167, 120, 50);
+      // color: rgb(165, 98, 98);
+      font-size: 1em;
+
+      &--small {
+        margin: 0 10px 1px 3px;
+        font-size: .6em;
+      }
+    }
+
     &--highlighted {
       background-color: $colour-highlight-2;
     }

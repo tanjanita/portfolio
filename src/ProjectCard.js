@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectCard(props) {
   return (
@@ -12,8 +14,14 @@ function ProjectCard(props) {
             Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
           </p>
           <div className="project__button-container">
-            <a className="project__button" href="mailto:riethmueller@mail.com">Open the page<span className="screen-reader-only"> for project-name</span> (NT)</a>
-            <a className="project__button alternative-button" href="mailto:riethmueller@mail.com">Check out the code<span className="screen-reader-only"> for project-name</span> (NT)</a>
+            <a className="project__button" href="mailto:riethmueller@mail.com">
+              Open the page<span className="screen-reader-only"> for project-name</span> (NT) 
+              <FontAwesomeIcon icon={faArrowRight} className="project__button-icon" />
+            </a>
+            <a className="project__button alternative-button" href="mailto:riethmueller@mail.com">
+              Check out the code<span className="screen-reader-only"> for project-name</span> (NT) 
+              <FontAwesomeIcon icon={faArrowRight} className="project__button-icon" />
+            </a>
           </div>
           <div className="project__image-box"> </div>
         </div>

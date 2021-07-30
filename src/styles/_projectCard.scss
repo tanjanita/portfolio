@@ -110,14 +110,10 @@
       margin-right: 16px;
     }
 
-    &::after {
-      display: inline-block;
-      padding-left: 10px;
+    &-icon {
+      margin-left: 8px;
       vertical-align: middle;
-      font-family: "Font Awesome 5 Free";
       font-size: .9em;
-      font-weight: 900;
-      content: "\f061"; // fas fa-arrow-right
     }
   }
 

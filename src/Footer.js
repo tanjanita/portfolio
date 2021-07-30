@@ -1,3 +1,7 @@
+import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+
 function Footer() {
   return (
     <footer className="footer">
@@ -20,8 +24,8 @@ function Footer() {
       <div className="footer__bar">
         <p className="copyright">&copy; 2021 Tanja Riethm&uuml;ller</p>
         <div className="media-links">
-          <a className="media-links__item" href="https://www.linkedin.com/in/tanja-riethmueller/"><i className="fab fa-linkedin"></i><span className="screen-reader-only">Tanja's LinkedIn page</span></a>
-          <a className="media-links__item" href="https://github.com/tanjanita"><i className="fab fa-github-square"></i><span className="screen-reader-only">Tanja's GitHub space</span></a>
+          <a className="media-links__item" href="https://www.linkedin.com/in/tanja-riethmueller/"><FontAwesomeIcon icon={faLinkedin} /><span className="screen-reader-only">Tanja's LinkedIn page</span></a>
+          <a className="media-links__item" href="https://github.com/tanjanita"><FontAwesomeIcon icon={faGithubSquare} /><span className="screen-reader-only">Tanja's GitHub space</span></a>
         </div>
       </div>
 
