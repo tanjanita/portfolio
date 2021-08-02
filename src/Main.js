@@ -7,7 +7,7 @@ import Hero from './Hero';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
 
-const svgString = encodeURIComponent(renderToStaticMarkup(<Logo colour="#e7ecf6" filter="blur" />));
+const svgString = encodeURIComponent(renderToStaticMarkup(<Logo colour="#e5ecf0" filter="blur" />));
 
 function Main() {
   return (

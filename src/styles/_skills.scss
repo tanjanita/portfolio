@@ -22,12 +22,10 @@
 
   &__collection {
     margin: 0 $padding-sides 1.3*$padding-sides;
-    // padding: 0 $padding-sides 3*$padding-sides;
     text-align: left;
 
     @include screen(small) {
       margin: 10px $padding-sides-small 1.3*$padding-sides-small;
-      // padding: 10px $padding-sides-small 2*$padding-sides-small;
     }
 
     @include screen(medium) {
@@ -64,8 +62,8 @@
 
     &-headline {
       @extend h5;
-      margin-top: 1em;
-      color: $colour-base-medium;
+      margin-top: 1.2em;
+      color: $colour-grey-medium;
     }
 
   }
@@ -84,9 +82,7 @@
 
     &-icon {
       margin: 0 7px 0 0;
-      color: rgb(141, 119, 47);
-      // color: rgb(167, 120, 50);
-      // color: rgb(165, 98, 98);
+      color: rgb(125, 129, 65);
       font-size: 1em;
 
       &--small {

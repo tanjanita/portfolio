@@ -437,7 +437,7 @@ html {
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   font-weight: 400;
-  color: #344648;
+  color: #2e3c41;
 }
 
 h1, h2, h3, .contact__headline, h4, h5, .list__category-headline, h6 {
@@ -445,7 +445,7 @@ h1, h2, h3, .contact__headline, h4, h5, .list__category-headline, h6 {
   font-family: "Source Serif Pro", Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
   font-style: italic;
-  color: #344648;
+  color: #2e3c41;
 }
 
 h1 {
@@ -1059,8 +1059,8 @@ p {
   position: relative;
   margin: 30px 0 70px;
   padding: 26px 26px;
-  background-color: #344648;
-  color: #ffffff;
+  background-color: #2e3c41;
+  color: #d9ecee;
   text-align: left;
 }
 
@@ -1080,7 +1080,8 @@ p {
 
 .project-card--align-right {
   text-align: right;
-  background-color: #748B93;
+  background-color: #92a9b1;
+  color: #202a2e;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1128,7 +1129,12 @@ p {
 
 .project__headline {
   margin: 0 0 10px;
+  font-size: 1.8rem;
   color: inherit;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: objects;
+          text-decoration-skip: objects;
+  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1138,14 +1144,12 @@ p {
 }
 
 .project__description {
-  margin-bottom: 50px;
-  font-size: 0.875rem;
+  margin-bottom: .9em;
   line-height: 1.4em;
 }
 
 @media only screen and (min-width: 370px) {
   .project__description {
-    margin-bottom: 50px;
     font-size: 1rem;
   }
 }
@@ -1193,7 +1197,7 @@ p {
   padding: 6px 10px 4px;
   border-radius: 4px;
   background-color: #ffffff;
-  color: #344648;
+  color: #2e3c41;
   font-weight: 700;
   white-space: nowrap;
   font-size: 0.875rem;
@@ -1208,7 +1212,7 @@ p {
 @media only screen and (min-width: 768px) {
   .project__button {
     background-color: #ffffff;
-    color: #344648;
+    color: #2e3c41;
     margin-right: 16px;
   }
 }
@@ -1274,6 +1278,46 @@ p {
     left: unset;
     left: -84px;
   }
+}
+
+.horizontal-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 44px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+@media only screen and (min-width: 768px) {
+  .horizontal-list {
+    margin-bottom: 18px;
+  }
+}
+
+.horizontal-list--align-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .horizontal-list {
+    max-width: 400px;
+  }
+}
+
+.horizontal-list__item {
+  padding: 5px 7px 0 0;
+  white-space: nowrap;
+}
+
+.horizontal-list__item--align-right {
+  padding: 5px 0 0 7px;
 }
 
 .alternative-button {
@@ -1377,8 +1421,8 @@ p {
 }
 
 .list__category-headline {
-  margin-top: 1em;
-  color: #748B93;
+  margin-top: 1.2em;
+  color: #7f9096;
 }
 
 .list__item {
@@ -1386,7 +1430,7 @@ p {
   padding: 6px 9px 2px;
   border-radius: 4px;
   background-color: #fff5bc;
-  color: #344648;
+  color: #2e3c41;
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: .9em;
   font-weight: 700;
@@ -1395,7 +1439,7 @@ p {
 
 .list__item-icon {
   margin: 0 7px 0 0;
-  color: #8d772f;
+  color: #7d8141;
   font-size: 1em;
 }
 
@@ -1461,7 +1505,7 @@ p {
 
 .footer__bar {
   padding: 26px 26px 19.5px;
-  background-color: #344648;
+  background-color: #2e3c41;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
