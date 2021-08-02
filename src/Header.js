@@ -8,7 +8,7 @@ function Header() {
       <div className="header__container">
         <a href="#top">
           <span className="screen-reader-only">Top of page</span>
-          <Logo colour="#262626" />
+          <Logo colour="#202a2e" />
         </a>
         <nav className="navigation">
           <a className="navigation__button" href="mailto:riethmueller@mail.com">Contact me</a>

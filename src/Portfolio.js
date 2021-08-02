@@ -11,7 +11,6 @@ function Portfolio() {
       </div>
 
       <ProjectCard />
-      <ProjectCard />
 
     </article>
   );

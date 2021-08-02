@@ -1,49 +1,53 @@
 import React from 'react';
+import Projects from "./projects.json";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-function ProjectCard(props) {
+function ProjectCard() {
+
   return (
     <div className="project">
 
-      <div className="project-card__container">
-        <div className="project-card__off-center-nudge"></div>
-        <div className="project-card">
-          <h3 className="project__headline">Project.Name</h3>
-          <p className="project__description">
-            Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
-          </p>
-          <div className="project__button-container">
-            <a className="project__button" href="mailto:riethmueller@mail.com">
-              Open the page<span className="screen-reader-only"> for project-name</span> (NT) 
-              <FontAwesomeIcon icon={faArrowRight} className="project__button-icon" />
-            </a>
-            <a className="project__button alternative-button" href="mailto:riethmueller@mail.com">
-              Check out the code<span className="screen-reader-only"> for project-name</span> (NT) 
-              <FontAwesomeIcon icon={faArrowRight} className="project__button-icon" />
-            </a>
-          </div>
-          <div className="project__image-box"> </div>
-        </div>
-      </div>     
+      {Projects.map((project) => {
 
-      {/* <div className="project-card__container project-card__container--align-right">
-        <div className="project-card__off-center-nudge"></div>
-        <div className="project-card project-card--align-right">
-          <h3 className="project__headline">Project.Name</h3>
-          <p className="project__description">
-            Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.
-          </p>
-          <div className="project__button-container project__button-container--align-right">
-            <a className="project__button" href="mailto:riethmueller@mail.com">Open the page<span className="screen-reader-only"> for project-name</span></a>
-            <a className="project__button alternative-button" href="mailto:riethmueller@mail.com">Check out the code<span className="screen-reader-only"> for project-name</span></a>
-          </div>
-          <div className="project__image-box project__image-box--align-right"> </div>
-        </div>
-      </div> */}
+        let oddCard = (project.id % 2 === 0) ? true : false;
+      
+            return (
+
+            <div className={`project-card__container${oddCard ? " project-card__container--align-right" : ""}`} key={project.id}>
+              <div className="project-card__off-center-nudge"></div>
+              <div className={`project-card${oddCard ? " project-card--align-right" : ""}`}>
+              <h3 className={`project__headline${oddCard ? " project__headline--align-right" : ""}`}>{project.name}</h3>
+                <p className="project__description">{project.description}</p>
+                <ul className={`horizontal-list${oddCard ? " horizontal-list--align-right" : ""}`}>
+
+                  {project.technologies.map((technology, index) => {
+                    return (
+                      <li key={index} className={`horizontal-list__item${oddCard ? " horizontal-list__item--align-right" : ""}`}>#{technology} </li>
+                    );
+                  })}
+
+                </ul>
+                <div className={`project__button-container${oddCard ? " project__button-container--align-right" : ""}`}>
+                  <a className="project__button" href={project.linkPage} target="_blank"  rel="noreferrer" title="Open page in a new tab">
+                    Open the page<span className="screen-reader-only"> for {project.name}</span> 
+                    <FontAwesomeIcon icon={faArrowRight} className="project__button-icon" />
+                  </a>
+                  <a className="project__button alternative-button" href={project.linkCode} target="_blank" rel="noreferrer">
+                    Check out the code<span className="screen-reader-only"> for {project.name}</span> 
+                    <FontAwesomeIcon icon={faArrowRight} className="project__button-icon" />
+                  </a>
+                </div>
+                <div className={`project__image-box${oddCard ? " project__image-box--align-right" : ""}`}> </div>
+              </div>
+            </div>
+
+            ); // end of return within map
+      })}
 
     </div>
-  );
+
+  ); // end of return statement
 }
 
 export default ProjectCard;

@@ -1,15 +1,22 @@
 /*------------------ Variables ------------------*/
-$colour-base-dark: #344648;
-$colour-base-dark-medium: #516369;
-$colour-base-medium: #748B93;
-$colour-base-medium-lighter: #92a9b1;
-$colour-base-medium-light: #cee0e2;
+$colour-base-dark: #2e3c41;
 $colour-base-light: #ffffff;
+
+$colour-grey-dark: #202a2e;
+$colour-grey-dark-medium: #3d5057;
+$colour-grey-medium: #7f9096;
+$colour-grey-medium-light: #92a9b1;
+$colour-grey-light: #cee0e2;
+$colour-grey-pale: #d9ecee;
+
+// dark, medium, light, pale
+
 $colour-highlight-1: #f3766f;
 $colour-highlight-1-dark: #ee5951;
 $colour-highlight-1-light: #ffb5b1;
 $colour-highlight-2: #ffe657;
 $colour-highlight-2-light: #fff5bc;
+$colour-blue: #32809e;
 
 // Side padding
 $padding-sides: 26px; // xsmall padding for screen-frame

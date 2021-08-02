@@ -6,7 +6,7 @@
     margin: 30px 0 70px;
     padding: $padding-sides $padding-sides;
     background-color: $colour-base-dark;
-    color: $colour-base-light;
+    color: $colour-grey-pale;
     text-align: left;
 
     @include screen(small) {
@@ -21,7 +21,8 @@
 
     &--align-right {
       text-align: right;
-      background-color: $colour-base-medium;
+      background-color: $colour-grey-medium-light;
+      color: $colour-grey-dark;
 
       @include screen(medium) {
         display: flex;
@@ -52,7 +53,11 @@
 
   &__headline {
     margin: 0 0 10px;
-    color: inherit;
+    font-size: $text-h2;
+    color: inherit; // Inherit from container instead of headline specs
+    text-decoration: underline;
+    text-decoration-skip: objects;
+    text-transform: capitalize;
 
     @include screen(small) {
       margin: 0 0 16px;
@@ -60,12 +65,10 @@
   }
 
   &__description {
-    margin-bottom: 50px;
-    font-size: $text-sm;
+    margin-bottom: .9em;
     line-height: 1.4em;
 
     @include screen(small) {
-      margin-bottom: 50px;
       font-size: $text-body;
     }
 
@@ -163,12 +166,42 @@
   }
 }
 
+.horizontal-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 44px;
+  font-weight: 700;
+  letter-spacing: .02em;
+
+  @include screen(medium) {
+    margin-bottom: 18px;
+  }
+
+  &--align-right {
+    justify-content: flex-end;
+  }
+
+  @include screen(medium) {
+    max-width: 400px;
+  }
+
+  &__item {
+    padding: 5px 7px 0 0;
+    white-space: nowrap;
+
+    &--align-right {
+      padding: 5px 0 0 7px;
+    }
+  }
+
+}
+
 .alternative-button {
   margin-top: 16px;
-  background-color: $colour-base-medium-light;
+  background-color: $colour-grey-light;
 
   @include screen(medium) {
     margin-right: 0;
-    background-color: $colour-base-medium-light;
+    background-color: $colour-grey-light;
   }
 }
