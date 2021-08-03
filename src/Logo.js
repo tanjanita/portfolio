@@ -1,10 +1,7 @@
 import React from "react";
 
 function Logo(props) {
-  let blurFilter = false;
-  if (props.filter === "blur") {
-    blurFilter = true;
-  } 
+  let blurFilter = (props.filter === "blur") ? true : false;
   
   return (
     <svg {...(blurFilter ? {className: 'watermark scrollFade'} : {className: 'header__logo'})} width="110" height="108" viewBox="0 0 29.104 28.575" xmlns="http://www.w3.org/2000/svg" aria-labelledby="trLogo" role="img">
