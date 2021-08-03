@@ -1,0 +1,65 @@
+[{
+    "id": 1,
+    "category": "The Basics",
+    "skills": [{
+      "name": "HTML/5",
+      "icon": "Cubes"
+    }, {
+      "name": "CSS/3",
+      "icon": "Cubes"
+    }, {
+      "name": "SASS",
+      "icon": "Cubes"
+    }, {
+      "name": "BEM",
+      "icon": "Cubes"
+    }, {
+      "name": "Bootstrap",
+      "icon": "Cube"
+    }, {
+      "name": "JavaScript",
+      "icon": "Cubes"
+    }, {
+      "name": "JSON",
+      "icon": "Cubes"
+    }, {
+      "name": "Git version control",
+      "icon": "Cubes"
+    }]
+  },
+  {
+    "id": 1,
+    "category": "Framesets / etc.",
+    "skills": [{
+      "name": "React",
+      "icon": "Cubes"
+    }, {
+      "name": "jQuery",
+      "icon": "Cube"
+    }, {
+      "name": "EJS",
+      "icon": "Cube"
+    }, {
+      "name": "APIs",
+      "icon": "Cubes"
+    }, {
+      "name": "RESTful APIs",
+      "icon": "Cube"
+    }, {
+      "name": "MongoDB",
+      "icon": "Cubes"
+    }, {
+      "name": "Mongoose",
+      "icon": "Cubes"
+    }, {
+      "name": "Node.js",
+      "icon": "Cube"
+    }, {
+      "name": "NPM",
+      "icon": "Cubes"
+    }, {
+      "name": "Express",
+      "icon": "Cubes"
+    }]
+  }
+]
