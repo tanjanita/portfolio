@@ -14,9 +14,6 @@
     "name": "BEM",
     "highlight": true
   }, {
-    "name": "Bootstrap",
-    "highlight": false
-  }, {
     "name": "JavaScript",
     "highlight": true
   }, {
@@ -25,6 +22,9 @@
   }, {
     "name": "Git version control",
     "highlight": true
+  }, {
+    "name": "Bootstrap",
+    "highlight": false
   }]
 }, {
   "id": 2,
@@ -33,16 +33,10 @@
     "name": "React",
     "highlight": true
   }, {
-    "name": "jQuery",
-    "highlight": false
-  }, {
-    "name": "EJS",
-    "highlight": false
-  }, {
     "name": "APIs",
     "highlight": true
   }, {
-    "name": "RESTful APIs",
+    "name": "REST",
     "highlight": true
   }, {
     "name": "MongoDB",
@@ -52,13 +46,19 @@
     "highlight": true
   }, {
     "name": "Node.js",
-    "highlight": false
+    "highlight": true
   }, {
     "name": "NPM",
     "highlight": true
   }, {
     "name": "Express",
     "highlight": true
+  }, {
+    "name": "jQuery",
+    "highlight": false
+  }, {
+    "name": "EJS",
+    "highlight": false
   }]
 }, {
   "id": 3,

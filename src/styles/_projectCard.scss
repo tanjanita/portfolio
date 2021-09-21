@@ -164,6 +164,17 @@
       }
     }
   }
+
+  &__image {
+    margin: 10px;
+    max-width: 180px;
+    overflow: hidden;
+
+    @include screen(medium) {
+      max-width: 210px;
+    }
+
+  }
 }
 
 .horizontal-list {

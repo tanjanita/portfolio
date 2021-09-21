@@ -2,17 +2,19 @@
     "id": 1,
     "name": "ShoppingMate App",
     "description": "Go shopping with your mate! A lightweight shopping list app, which can be used to split the list: Several people can select categories and tick off items at the same time. This way you can share the load and be done faster.",
-    "technologies": ["MongoDB", "Mongoose", "API", "React", "HTML/5", "CSS/3"],
+    "technologies": ["API", "REST", "React", "MongoDB", "Mongoose", "HTML/5", "CSS/3"],
     "linkPage": "http://www.google.com",
-    "linkCode": "http://www.theguardian.com"
+    "linkCode": "http://www.theguardian.com",
+    "imageURL": "/images/Project-image-shoppingMate.png"
   },
   {
     "id": 2,
     "name": "My Portfolio",
     "description": "The page you are looking at right now: A portfolio showcasing some of my projects, my skillset, and of course a CTA to contact me.",
-    "technologies": ["React", "HTML/5", "CSS/3", "SCSS", "BEM", "Figma", "SVG (Creation/FontAwesome)", "NPM"],
+    "technologies": ["React", "HTML/5", "CSS/3", "SASS", "BEM", "Figma", "SVG (Creation/FontAwesome)", "NPM"],
     "linkPage": "http://localhost:3000",
-    "linkCode": "http://www.theguardian.com"
+    "linkCode": "http://www.theguardian.com",
+    "imageURL": "/images/Project-image-portfolio1.png"
   },
   {
     "id": 3,
