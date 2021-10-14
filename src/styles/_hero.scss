@@ -37,12 +37,12 @@
     margin-top: 0;
 
     @include screen(small) {
-      margin-top: 1em;
+      margin-top: .7em;
     }
   }
 
   &__subtitle {
-    @extend .subheading1;
+    @extend .subheading2;
   }
 
   &__introduction {

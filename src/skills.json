@@ -73,16 +73,19 @@
     "name": "Terminal/Commandline",
     "highlight": true
   }, {
+    "name": "MongoDB Atlas",
+    "highlight": true
+  }, {
+    "name": "Heroku",
+    "highlight": true
+  }, {
+    "name": "Postman",
+    "highlight": true
+  }, {
     "name": "Figma",
     "highlight": true
   }, {
-    "name": "Codepen",
-    "highlight": false
-  }, {
     "name": "robo3t",
-    "highlight": false
-  }, {
-    "name": "Postman",
     "highlight": false
   }]
 }, {
@@ -90,9 +93,6 @@
   "category": "Conceptual",
   "skillset": [{
     "name": "Version control workflow",
-    "highlight": true
-  }, {
-    "name": "Refactoring",
     "highlight": true
   }, {
     "name": "Problem solving strategies",
@@ -111,13 +111,13 @@
     "name": "Japanophile",
     "highlight": false
   }, {
-    "name": "Photography dabbler",
-    "highlight": false
-  }, {
     "name": "Art lover",
     "highlight": false
   }, {
-    "name": "Fool for cats and all things cute ^._.^ฅ",
+    "name": "Photography dabbler",
+    "highlight": false
+  }, {
+    "name": "Fool for cats and all things cute ^._.^",
     "highlight": false
   }]
 }]
