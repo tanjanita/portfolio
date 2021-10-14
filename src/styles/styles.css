@@ -433,7 +433,7 @@ fieldset {
 
 /*------------------ Typography ------------------*/
 html {
-  background: #ffffff;
+  background: #FCFFFD;
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   font-weight: 400;
@@ -588,8 +588,9 @@ p {
   }
 }
 
-.subheading1, .hero__subtitle,
+.subheading1,
 .subheading2,
+.hero__subtitle,
 .subheading3,
 .subheading4,
 .hero__welcome {
@@ -597,46 +598,54 @@ p {
   font-style: italic;
 }
 
-.subheading1, .hero__subtitle {
+.subheading1 {
   font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 370px) {
-  .subheading1, .hero__subtitle {
+  .subheading1 {
     font-size: 2.16rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .subheading1, .hero__subtitle {
+  .subheading1 {
     font-size: 2.34rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .subheading1, .hero__subtitle {
+  .subheading1 {
     font-size: 2.7rem;
   }
 }
 
-.subheading2 {
+
+.subheading2,
+.hero__subtitle {
   font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 370px) {
-  .subheading2 {
+  
+  .subheading2,
+  .hero__subtitle {
     font-size: 1.8rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .subheading2 {
+  
+  .subheading2,
+  .hero__subtitle {
     font-size: 1.95rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .subheading2 {
+  
+  .subheading2,
+  .hero__subtitle {
     font-size: 2.25rem;
   }
 }
@@ -752,8 +761,8 @@ p {
   height: 151px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, rgba(253, 249, 45, 0.473)), to(rgba(253, 250, 45, 0)));
   background-image: linear-gradient(rgba(253, 249, 45, 0.473) 95%, rgba(253, 250, 45, 0) 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #ffffff), to(rgba(253, 250, 45, 0)));
-  background-image: linear-gradient(#ffffff 95%, rgba(253, 250, 45, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #FCFFFD), to(rgba(253, 250, 45, 0)));
+  background-image: linear-gradient(#FCFFFD 95%, rgba(253, 250, 45, 0) 100%);
 }
 
 @media only screen and (min-width: 992px) {
@@ -797,7 +806,7 @@ p {
   padding: 15px 28px 12px;
   border-radius: 4px;
   background-color: #f3766f;
-  color: #ffffff;
+  color: #FCFFFD;
   font-weight: 700;
   white-space: nowrap;
 }
@@ -848,7 +857,7 @@ p {
   background-position: 25vw calc(151px - 10px);
   background-size: auto calc(105vh - 151px);
   background-repeat: no-repeat;
-  background-color: #ffffff;
+  background-color: #FCFFFD;
 }
 
 @media only screen and (min-width: 992px) {
@@ -1015,7 +1024,7 @@ p {
 
 @media only screen and (min-width: 370px) {
   .hero__title {
-    margin-top: 1em;
+    margin-top: .7em;
   }
 }
 
@@ -1059,8 +1068,8 @@ p {
   position: relative;
   margin: 30px 0 70px;
   padding: 26px 26px;
-  background-color: #2e3c41;
-  color: #d9ecee;
+  background-color: #92a9b1;
+  color: #202a2e;
   text-align: left;
 }
 
@@ -1080,8 +1089,8 @@ p {
 
 .project-card--align-right {
   text-align: right;
-  background-color: #92a9b1;
-  color: #202a2e;
+  background-color: #2e3c41;
+  color: #d9ecee;
 }
 
 @media only screen and (min-width: 768px) {
@@ -1196,7 +1205,7 @@ p {
   z-index: 20;
   padding: 6px 10px 4px;
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #FCFFFD;
   color: #2e3c41;
   font-weight: 700;
   white-space: nowrap;
@@ -1211,7 +1220,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .project__button {
-    background-color: #ffffff;
+    background-color: #FCFFFD;
     color: #2e3c41;
     margin-right: 16px;
   }
@@ -1229,7 +1238,7 @@ p {
   height: 146px;
   right: 26px;
   bottom: -26px;
-  background-color: #f3766f;
+  background-color: #ffe657;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1257,7 +1266,7 @@ p {
 
 .project__image-box--align-right {
   left: 26px;
-  background-color: #ffe657;
+  background-color: #f3766f;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1277,6 +1286,18 @@ p {
   .project__image-box--align-right {
     left: unset;
     left: -84px;
+  }
+}
+
+.project__image {
+  margin: 3px;
+  max-width: 180px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .project__image {
+    max-width: 210px;
   }
 }
 
@@ -1429,7 +1450,7 @@ p {
   margin: 10px 8px 0 0;
   padding: 6px 9px 2px;
   border-radius: 4px;
-  background-color: #fff5bc;
+  background-color: #fff7ca;
   color: #2e3c41;
   font-family: Hind, Verdana, Geneva, Tahoma, sans-serif;
   font-size: .9em;
@@ -1444,7 +1465,7 @@ p {
 }
 
 .list__item-icon--small {
-  margin: 0 10px 1px 3px;
+  margin: 0 9px 1px 3px;
   font-size: .6em;
 }
 
@@ -1547,16 +1568,32 @@ p {
 
 .contact__container {
   text-align: left;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin: 0 auto;
+  max-width: 240px;
+}
+
+@media only screen and (min-width: 370px) {
+  .contact__container {
+    max-width: 290px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact__container {
+    max-width: 340px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact__container {
+    max-width: 360px;
+  }
 }
 
 .contact__headline {
   margin-bottom: .4em;
-  color: #ffffff;
-  font-weight: 400;
+  color: #FCFFFD;
+  font-weight: 700;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1571,8 +1608,14 @@ p {
   }
 }
 
+.contact__text {
+  color: #FCFFFD;
+  font-size: text-sm;
+  margin-bottom: .6em;
+}
+
 .contact__link {
-  color: #ffffff;
+  color: #FCFFFD;
   font-size: 1.35em;
   font-weight: 700;
 }
@@ -1602,7 +1645,7 @@ p {
 
 .media-links__item {
   margin-left: 14px;
-  color: #ffffff;
+  color: #FCFFFD;
   font-size: 1.5em;
 }
 

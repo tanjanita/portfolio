@@ -1,25 +1,19 @@
 [{
     "id": 1,
     "name": "ShoppingMate App",
-    "description": "Go shopping with your mate! A lightweight shopping list app, which can be used to split the list: Several people can select categories and tick off items at the same time. This way you can share the load and be done faster.",
-    "technologies": ["MongoDB", "Mongoose", "API", "React", "HTML/5", "CSS/3"],
-    "linkPage": "http://www.google.com",
-    "linkCode": "http://www.theguardian.com"
+    "description": "A browser-based shopping list app, which can be used to split the list. Shopping mates can select shopping aisle categories and tick off items at the same time.<br /><br /><i>PLEASE NOTE: Opening the app for the first time might take longer due to it being a free deployment which goes to sleep when it 's not in use. The same applies for the integrated background API.</i>",
+    "technologies": ["React", "API", "REST", "MongoDB", "Mongoose", "JavaScript", "HTML/5", "CSS/3", "Postman", "Heroku"],
+    "linkPage": "https://tanjanita-shopping-mate.herokuapp.com/",
+    "linkCode": "https://github.com/tanjanita/shopping-mate",
+    "imageURL": "/images/project-image-shoppingMate2.gif"
   },
   {
     "id": 2,
     "name": "My Portfolio",
-    "description": "The page you are looking at right now: A portfolio showcasing some of my projects, my skillset, and of course a CTA to contact me.",
-    "technologies": ["React", "HTML/5", "CSS/3", "SCSS", "BEM", "Figma", "SVG (Creation/FontAwesome)", "NPM"],
-    "linkPage": "http://localhost:3000",
-    "linkCode": "http://www.theguardian.com"
-  },
-  {
-    "id": 3,
-    "name": "The third project",
-    "description": "Reprehenderit esse labore id veniam ut veniam non ex adipisicing amet ullamco dolor proident. Exercitation velit ea incididunt sit qui do ipsum fugiat laboris minim nostrud dolor.",
-    "technologies": ["CSS/3"],
-    "linkPage": "http://localhost:3000",
-    "linkCode": "http://www.theguardian.com"
+    "description": "The page you are currently looking at: <br />A portfolio showcasing some of my projects, plus further information about me and a CTA to contact me.",
+    "technologies": ["React", "JavaScript", "HTML/5", "CSS/3", "SASS", "BEM", "Figma", "SVG (Creation/FontAwesome)"],
+    "linkPage": "https://tanjanita.herokuapp.com/",
+    "linkCode": "https://github.com/tanjanita/portfolio",
+    "imageURL": "/images/project-image-portfolio.png"
   }
 ]

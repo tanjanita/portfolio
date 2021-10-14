@@ -5,8 +5,8 @@
     position: relative; // For absolute positioning of image-box below
     margin: 30px 0 70px;
     padding: $padding-sides $padding-sides;
-    background-color: $colour-base-dark;
-    color: $colour-grey-pale;
+    background-color: $colour-grey-medium-light;
+    color: $colour-grey-dark;
     text-align: left;
 
     @include screen(small) {
@@ -21,8 +21,8 @@
 
     &--align-right {
       text-align: right;
-      background-color: $colour-grey-medium-light;
-      color: $colour-grey-dark;
+      background-color: $colour-base-dark;
+      color: $colour-grey-pale;
 
       @include screen(medium) {
         display: flex;
@@ -126,7 +126,7 @@
     height: 146px;
     right: $padding-sides;
     bottom: -$padding-sides;
-    background-color: $colour-highlight-1;
+    background-color: $colour-highlight-2;
 
     @include screen(small) {
       right: $padding-sides-small;
@@ -147,7 +147,7 @@
 
     &--align-right {
       left: $padding-sides;
-      background-color: $colour-highlight-2;
+      background-color: $colour-highlight-1;
 
       @include screen(small) {
         left: $padding-sides-small;
@@ -163,6 +163,17 @@
         left: -$project-image-box-offset-medium;
       }
     }
+  }
+
+  &__image {
+    margin: 3px;
+    max-width: 180px;
+    overflow: hidden;
+
+    @include screen(medium) {
+      max-width: 210px;
+    }
+
   }
 }
 

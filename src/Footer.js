@@ -8,7 +8,8 @@ function Footer() {
 
       <div className="contact">
         <div className="contact__container">
-          <h2 className="contact__headline">Contact me</h2>
+          <h2 className="contact__headline" id="contact">Contact me</h2>
+          <p className="contact__text">Interested? I would love to hear from you to explore work opportunities together:</p>
           <a className="contact__link" href="mailto:riethmueller@mail.com">riethmueller@mail.com</a>
         </div>
       </div>

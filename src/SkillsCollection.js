@@ -19,29 +19,25 @@ function SkillsCollection() {
 
     <div className="skillset__collection">
 
-      {Skills.map((category) => {
-        return (
+      {Skills.map((category) => 
 
           <div key={category.id} className="list__category">
             <h3 className="list__category-headline">{category.category}</h3>
             <ul className="list">
 
-            {category.skillset.map((skill, index) => {
-              return (
+            {category.skillset.map((skill, index) => 
 
                 <li key={index} className={`list__item${skill.highlight ? " list__item--highlighted" : ""}`}>
                   {selectIcon(skill.highlight, category.category)}
                   {skill.name}
                 </li>
-
-              ); // end of return within skillset map
-            })} 
+                
+            )} 
 
             </ul>
           </div>
 
-        ); // end of return within category map
-      })}
+      )}
 
     </div>
 
