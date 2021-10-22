@@ -55,9 +55,9 @@
     margin: 0 0 10px;
     font-size: $text-h2;
     color: inherit; // Inherit from container instead of headline specs
-    text-decoration: underline;
+    // text-decoration: underline;
     text-decoration-skip: objects;
-    text-transform: capitalize;
+    // text-transform: capitalize;
 
     @include screen(small) {
       margin: 0 0 16px;
@@ -74,6 +74,10 @@
 
     @include screen(medium) {
       max-width: 400px;
+    }
+
+    @include screen(large) {
+      max-width: 365px;
     }
   }
 
@@ -145,6 +149,12 @@
       top: 50px;
     }
 
+    @include screen(large) {
+      width: 266px;
+      height: 194px;
+      top: 85px;
+    }
+
     &--align-right {
       left: $padding-sides;
       background-color: $colour-highlight-1;
@@ -169,9 +179,16 @@
     margin: 3px;
     max-width: 194px;
     overflow: hidden;
+    filter: grayscale(0.3);
+    opacity: .6;
 
     @include screen(medium) {
       max-width: 224px;
+    }
+
+    @include screen(large) {
+      width: 260px;
+      max-width: 260px;
     }
 
   }
@@ -194,6 +211,10 @@
 
   @include screen(medium) {
     max-width: 400px;
+  }
+
+  @include screen(large) {
+    max-width: 365px;
   }
 
   &__item {

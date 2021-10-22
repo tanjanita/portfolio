@@ -96,7 +96,23 @@
   content: "";
 
   @include screen(large) {
-    height: $header-height-large+30px;
-    margin-top: -$header-height-large+30px;
+    height: $header-height-large+40px;
+    margin-top: -$header-height-large+40px;
+  }
+}
+
+#portfolio::before {
+
+  @include screen(xlarge) {
+    height: $header-height-large+50px;
+    margin-top: -$header-height-large+50px;
+  }
+}
+
+#skillset::before {
+
+  @include screen(xlarge) {
+    height: $header-height-large+160px;
+    margin-top: -$header-height-large+160px;
   }
 }

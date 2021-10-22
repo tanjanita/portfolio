@@ -10,7 +10,7 @@ function ProjectCard() {
 
       {Projects.map((project) => {
         // Set modulo to 1 or 0 to switch order of project card designs
-        let oddCard = (project.id % 2 === 0) ? true : false;
+        let oddCard = (project.id % 2 === 1) ? true : false;
         return (
 
         <div className={`project-card__container${oddCard ? " project-card__container--align-right" : ""}`} key={project.id}>
@@ -22,9 +22,7 @@ function ProjectCard() {
             <ul className={`horizontal-list${oddCard ? " horizontal-list--align-right" : ""}`}>
 
               {project.technologies.map((technology, index) =>  
-
                 <li key={index} className={`horizontal-list__item${oddCard ? " horizontal-list__item--align-right" : ""}`}>#{technology} </li>
-
               )}
 
             </ul>
@@ -38,8 +36,9 @@ function ProjectCard() {
                 <FontAwesomeIcon icon={faExternalLinkAlt} className="project__button-icon" />
               </a>
             </div>
-            <div className={`project__image-box${oddCard ? " project__image-box--align-right" : ""}`}>
+            <div className={`project__image-box${oddCard ? " project__image-box--align-right" : ""}`}><a href={project.linkPage} target="_blank" rel="noreferrer" title={`Open ${project.name} page in a new tab`}>
               <img src={project.imageURL} className="project__image" alt={`Screenshot of project ${project.name}`}/>
+              </a>
             </div>
           </div>
         </div>

@@ -2,10 +2,16 @@
   "id": 1,
   "category": "The Basics",
   "skillset": [{
-    "name": "HTML/5",
+    "name": "JavaScript",
     "highlight": true
   }, {
-    "name": "CSS/3",
+    "name": "JSON",
+    "highlight": true
+  }, {
+    "name": "HTML5",
+    "highlight": true
+  }, {
+    "name": "CSS3",
     "highlight": true
   }, {
     "name": "SASS",
@@ -14,14 +20,17 @@
     "name": "BEM",
     "highlight": true
   }, {
-    "name": "JavaScript",
+    "name": "Mobile-first CSS",
     "highlight": true
   }, {
-    "name": "JSON",
+    "name": "Responsive pages",
     "highlight": true
   }, {
     "name": "Git version control",
     "highlight": true
+  }, {
+    "name": "Scrum",
+    "highlight": false
   }, {
     "name": "Bootstrap",
     "highlight": false
@@ -70,7 +79,10 @@
     "name": "GitHub",
     "highlight": true
   }, {
-    "name": "Terminal/Commandline",
+    "name": "Command line",
+    "highlight": true
+  }, {
+    "name": "Postman",
     "highlight": true
   }, {
     "name": "MongoDB Atlas",
@@ -79,14 +91,8 @@
     "name": "Heroku",
     "highlight": true
   }, {
-    "name": "Postman",
-    "highlight": true
-  }, {
     "name": "Figma",
     "highlight": true
-  }, {
-    "name": "robo3t",
-    "highlight": false
   }]
 }, {
   "id": 4,
@@ -108,7 +114,7 @@
     "name": "Nature explorer",
     "highlight": false
   }, {
-    "name": "Japanophile",
+    "name": "Horticulturalist",
     "highlight": false
   }, {
     "name": "Art lover",
