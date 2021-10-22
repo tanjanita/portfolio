@@ -37,7 +37,7 @@ function ProjectCard() {
               </a>
             </div>
             <div className={`project__image-box${oddCard ? " project__image-box--align-right" : ""}`}><a href={project.linkPage} target="_blank" rel="noreferrer" title={`Open ${project.name} page in a new tab`}>
-              <img src={project.imageURL} className="project__image" alt={`Screenshot of project ${project.name}`}/>
+              <img src={window.location.origin+project.imageURL} className="project__image" alt={`Screenshot of project ${project.name}`}/>
               </a>
             </div>
           </div>
