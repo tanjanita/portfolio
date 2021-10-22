@@ -947,8 +947,22 @@ p {
 @media only screen and (min-width: 992px) {
   #portfolio::before,
   #skillset::before {
-    height: 191px;
-    margin-top: -131px;
+    height: 201px;
+    margin-top: -121px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #portfolio::before {
+    height: 211px;
+    margin-top: -111px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #skillset::before {
+    height: 321px;
+    margin-top: -1px;
   }
 }
 
@@ -1140,10 +1154,8 @@ p {
   margin: 0 0 10px;
   font-size: 1.8rem;
   color: inherit;
-  text-decoration: underline;
   -webkit-text-decoration-skip: objects;
           text-decoration-skip: objects;
-  text-transform: capitalize;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1166,6 +1178,12 @@ p {
 @media only screen and (min-width: 768px) {
   .project__description {
     max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project__description {
+    max-width: 365px;
   }
 }
 
@@ -1264,6 +1282,14 @@ p {
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .project__image-box {
+    width: 266px;
+    height: 194px;
+    top: 85px;
+  }
+}
+
 .project__image-box--align-right {
   left: 26px;
   background-color: #f3766f;
@@ -1293,11 +1319,21 @@ p {
   margin: 3px;
   max-width: 194px;
   overflow: hidden;
+  -webkit-filter: grayscale(0.3);
+          filter: grayscale(0.3);
+  opacity: .6;
 }
 
 @media only screen and (min-width: 768px) {
   .project__image {
     max-width: 224px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .project__image {
+    width: 260px;
+    max-width: 260px;
   }
 }
 
@@ -1329,6 +1365,12 @@ p {
 @media only screen and (min-width: 768px) {
   .horizontal-list {
     max-width: 400px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .horizontal-list {
+    max-width: 365px;
   }
 }
 

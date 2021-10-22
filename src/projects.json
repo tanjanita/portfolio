@@ -1,17 +1,17 @@
 [{
     "id": 1,
-    "name": "ShoppingMate App",
+    "name": "shoppingMate App",
     "description": "A browser-based shopping list app, which can be used to split the list. Shopping mates can select shopping aisle categories and tick off items at the same time.<br /><br /><i>PLEASE NOTE: Opening the app for the first time might take longer due to it currently being a free deployment which goes to sleep when it 's not in use. Sorry 'bout that!</i>",
-    "technologies": ["React", "API", "REST", "MongoDB", "Mongoose", "JavaScript", "HTML/5", "CSS/3", "Postman", "Heroku"],
+    "technologies": ["React", "API", "REST", "MongoDB", "Mongoose", "JavaScript", "HTML5", "CSS3", "Postman", "Heroku"],
     "linkPage": "https://tanjanita-shopping-mate.herokuapp.com/",
     "linkCode": "https://github.com/tanjanita/shopping-mate",
     "imageURL": "/images/project-image-shoppingMate-224x162.png"
   },
   {
     "id": 2,
-    "name": "My Portfolio",
-    "description": "The page you are currently looking at: <br />A portfolio showcasing some of my projects, plus further information about my skills and motivation, and a CTA to contact me.",
-    "technologies": ["React", "JavaScript", "HTML/5", "CSS/3", "SASS", "BEM", "Figma", "SVG (Creation/FontAwesome)"],
+    "name": "This Portfolio",
+    "description": "The page you are currently looking at: <br />A portfolio showcasing some of my projects, plus further information about my skills and motivation, and a CTA to contact me.<br /><br /><a href='https://www.figma.com/file/Ic7eZFDKapZZtsskpJJibg/Portfolio-Design?node-id=103%3A1479'><u>View the design file in Figma</u></a>",
+    "technologies": ["React", "JavaScript", "HTML5", "CSS3", "SASS", "BEM", "Figma", "SVG (Creation/FontAwesome)"],
     "linkPage": "https://tanjanita.herokuapp.com/",
     "linkCode": "https://github.com/tanjanita/portfolio",
     "imageURL": "/images/project-image-portfolio-224x162.png"
