@@ -112,8 +112,6 @@
     }
 
     @include screen(medium) {
-      background-color: $colour-base-light;
-      color: $colour-base-dark;
       margin-right: 16px;
     }
 
@@ -131,6 +129,7 @@
     right: $padding-sides;
     bottom: -$padding-sides;
     background-color: $colour-highlight-2;
+    border-radius: $border-radius;
 
     @include screen(small) {
       right: $padding-sides-small;
@@ -178,12 +177,15 @@
   &__image {
     margin: 3px;
     max-width: 194px;
+    border-radius: $border-radius;
     overflow: hidden;
     filter: grayscale(0.3);
     opacity: .6;
 
     @include screen(medium) {
       max-width: 224px;
+      filter: none;
+      opacity: .8;
     }
 
     @include screen(large) {
@@ -191,6 +193,9 @@
       max-width: 260px;
     }
 
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 

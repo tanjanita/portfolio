@@ -759,10 +759,8 @@ p {
   z-index: -1;
   width: 100vw;
   height: 151px;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, rgba(253, 249, 45, 0.473)), to(rgba(253, 250, 45, 0)));
-  background-image: linear-gradient(rgba(253, 249, 45, 0.473) 95%, rgba(253, 250, 45, 0) 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #FCFFFD), to(rgba(253, 250, 45, 0)));
-  background-image: linear-gradient(#FCFFFD 95%, rgba(253, 250, 45, 0) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(98%, #FCFFFD), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(#FCFFFD 98%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media only screen and (min-width: 992px) {
@@ -1238,8 +1236,6 @@ p {
 
 @media only screen and (min-width: 768px) {
   .project__button {
-    background-color: #FCFFFD;
-    color: #2e3c41;
     margin-right: 16px;
   }
 }
@@ -1257,6 +1253,7 @@ p {
   right: 26px;
   bottom: -26px;
   background-color: #ffe657;
+  border-radius: 4px;
 }
 
 @media only screen and (min-width: 370px) {
@@ -1318,6 +1315,7 @@ p {
 .project__image {
   margin: 3px;
   max-width: 194px;
+  border-radius: 4px;
   overflow: hidden;
   -webkit-filter: grayscale(0.3);
           filter: grayscale(0.3);
@@ -1327,6 +1325,9 @@ p {
 @media only screen and (min-width: 768px) {
   .project__image {
     max-width: 224px;
+    -webkit-filter: none;
+            filter: none;
+    opacity: .8;
   }
 }
 
@@ -1335,6 +1336,10 @@ p {
     width: 260px;
     max-width: 260px;
   }
+}
+
+.project__image:hover {
+  opacity: 1;
 }
 
 .horizontal-list {
