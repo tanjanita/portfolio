@@ -14,7 +14,7 @@ function Header() {
           <a className="navigation__button" href="mailto:riethmueller@mail.com">Contact me</a>
           <div className="navigation__menu">
             <a className="navigation__menu-item" href="#portfolio">Portfolio</a>
-            <a className="navigation__menu-item" href="#skillset">Skillset</a>
+            <a className="navigation__menu-item" href="#skillset">Skill Set</a>
           </div>
         </nav> 
       </div>

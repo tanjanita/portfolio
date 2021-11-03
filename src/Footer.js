@@ -18,7 +18,7 @@ function Footer() {
         <div className="navigation__menu footer__navigation-gap">
           <a className="navigation__menu-item" href="#top">Home<span className="screen-reader-only"> section at top of page</span></a>
           <a className="navigation__menu-item" href="#portfolio">Portfolio<span className="screen-reader-only"> section on this page</span></a>
-          <a className="navigation__menu-item" href="#skillset">Skillset<span className="screen-reader-only"> section on this page</span></a>
+          <a className="navigation__menu-item" href="#skillset">Skill Set<span className="screen-reader-only"> section on this page</span></a>
         </div>
       </div>
 

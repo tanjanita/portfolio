@@ -37,8 +37,7 @@
     z-index: -1;
     width: 100vw;
     height: $header-height;
-    background-image: linear-gradient(rgba(253, 249, 45, 0.473) 95%, rgba(253, 250, 45, 0) 100%);
-    background-image: linear-gradient($colour-base-light 95%, rgba(253, 250, 45, 0) 100%);
+    background-image: linear-gradient($colour-base-light 98%, rgba(255, 255, 255, 0) 100%);
 
     @include screen(large) {
       height: $header-height-large;
