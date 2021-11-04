@@ -48,19 +48,16 @@
     "name": "REST",
     "highlight": true
   }, {
-    "name": "MongoDB",
+    "name": "Node.js",
+    "highlight": true
+  }, {
+    "name": "Express",
     "highlight": true
   }, {
     "name": "Mongoose",
     "highlight": true
   }, {
-    "name": "Node.js",
-    "highlight": true
-  }, {
-    "name": "NPM",
-    "highlight": true
-  }, {
-    "name": "Express",
+    "name": "MongoDB",
     "highlight": true
   }, {
     "name": "jQuery",
@@ -114,7 +111,7 @@
     "name": "Nature explorer",
     "highlight": false
   }, {
-    "name": "Horticulturalist",
+    "name": "Hobby horticulturalist",
     "highlight": false
   }, {
     "name": "Art lover",
