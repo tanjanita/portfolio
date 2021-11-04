@@ -1,8 +1,8 @@
 [{
     "id": 1,
     "name": "shoppingMate App",
-    "description": "A browser-based shopping list app, which can be used to split the list. Shopping mates can select shopping aisle categories and tick off items at the same time.<br /><br />Built using Create-React-App on the client side, connecting to an API managing data in MongoDB using Express server and Mongoose.",
-    "technologies": ["React", "API", "REST", "MongoDB", "Mongoose", "JavaScript", "HTML5", "CSS3", "Postman", "Heroku"],
+    "description": "A web application for managing and sharing shopping lists.<br /><br />Built with React using functional components, component hierarchy, state management and React router for the front end. The app integrates a RESTful API built with Node.js, using Express and Mongoose at the back end. The pages are built and styled using SASS, CSS3 and HTML5.",
+    "technologies": ["React", "API", "REST", "MongoDB", "Mongoose", "JavaScript", "HTML5", "CSS3", "SASS", "Postman", "Heroku"],
     "linkPage": "https://tanjanita-shopping-mate.herokuapp.com/",
     "linkCode": "https://github.com/tanjanita/shopping-mate",
     "imageURL": "/images/project-image-shoppingMate-224x162.png"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "Web Developer Portfolio",
-    "description": "The page you are looking at: <br />A portfolio showcasing some of my projects, plus further information about my skills and motivation, and a CTA to contact me. <br /><br />Designed in Figma and built based on Create-React-App using multiple components and integrated JSON data. <a href='https://www.figma.com/file/Ic7eZFDKapZZtsskpJJibg/Portfolio-Design?node-id=103%3A1479' target='_blank'><u>View the design file in Figma</u></a>",
+    "description": "The page you are looking at: <br />A portfolio showcasing some of my projects, plus further information about my skills and motivation, and a CTA to contact me. <br /><br />Designed in Figma and built using Create-React-App with multiple components and integrated JSON data. <a href='https://www.figma.com/file/Ic7eZFDKapZZtsskpJJibg/Portfolio-Design?node-id=103%3A1479' target='_blank'><u>View the design file in Figma</u></a>",
     "technologies": ["React", "JavaScript", "JSON", "HTML5", "CSS3", "SASS", "BEM", "Figma", "SVG (Creation/FontAwesome)"],
     "linkPage": "https://tanjanita.com/",
     "linkCode": "https://github.com/tanjanita/portfolio",
