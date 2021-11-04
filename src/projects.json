@@ -1,7 +1,7 @@
 [{
     "id": 1,
     "name": "shoppingMate App",
-    "description": "A web application for managing and sharing shopping lists.<br /><br />Built with React using functional components, component hierarchy, state management and React router for the front end. The app integrates a RESTful API built with Node.js, using Express and Mongoose at the back end. <br />The site was built and styled using SASS, CSS3 and HTML5.",
+    "description": "A web application for managing and sharing shopping lists.<br /><br />Built with React using functional components, component hierarchy, state management and React router for the front end.<br />At the back end, the app integrates a RESTful API built with Node.js, using Express and Mongoose at the back end.<br />The page was built and styled using SASS, CSS3 and HTML5.",
     "technologies": ["React", "API", "REST", "MongoDB", "Mongoose", "JavaScript", "HTML5", "CSS3", "SASS", "Postman", "Heroku"],
     "linkPage": "https://tanjanita-shopping-mate.herokuapp.com/",
     "linkCode": "https://github.com/tanjanita/shopping-mate",
